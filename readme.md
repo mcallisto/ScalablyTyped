@@ -20,7 +20,7 @@ which will be available online shortly after.
 
 ## About
 
-This is the home of Scala.js typings for **6964** Javascript libraries,
+This is the home of Scala.js typings for **52** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet:
@@ -29,13 +29,13 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               224060     10824414       981705      2510195      7332514
- Markdown              7022       329812        95958            0       233854
+ Scala               218464     10452175       959683      2342610      7149882
+ Markdown              6999       328399        95561            0       232838
  JSON                     5           29            0            0           29
  Makefile                 2           35            7            0           28
  HTML                     1            6            0            0            6
 --------------------------------------------------------------------------------
- Total               231090     11154296      1077670      2510195      7566431
+ Total               225471     10780644      1055251      2342610      7382783
 --------------------------------------------------------------------------------
 
 ```
@@ -102,7 +102,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201905220118")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201905221123")
 ```
 
 ### `build.sbt`
@@ -135,10 +135,7 @@ As you can imagine with all this casting and other nonsense,
 a more scala-like facade will often be a better way.
 
 For now we just have the following facades:
-- [std](facades/std)
-- [react](facades/react)
-- [react-redux](facades/react-redux)
-- [react-japgolly](facades/react-japgolly)
+
 
 These libraries can depend both on typings and external libraries, and
  will be versioned and published alongside ScalablyTyped typings.
