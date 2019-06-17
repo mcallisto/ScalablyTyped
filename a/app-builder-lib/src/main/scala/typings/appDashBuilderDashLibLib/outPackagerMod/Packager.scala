@@ -27,13 +27,13 @@ class Packager protected () extends js.Object {
   val areNodeModulesHandledExternally: scala.Boolean = js.native
   val buildResourcesDir: java.lang.String = js.native
   val cancellationToken: builderDashUtilDashRuntimeLib.builderDashUtilDashRuntimeMod.CancellationToken = js.native
-  val config: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Configuration */ js.Any = js.native
+  val config: appDashBuilderDashLibLib.outConfigurationMod.Configuration = js.native
   var createHelper: js.Any = js.native
   val debugLogger: builderDashUtilLib.builderDashUtilMod.DebugLogger = js.native
   val devMetadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata | scala.Null = js.native
   var doBuild: js.Any = js.native
   val eventEmitter: nodeLib.eventsMod.EventEmitter = js.native
-  val framework: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Framework */ js.Any = js.native
+  val framework: appDashBuilderDashLibLib.outFrameworkMod.Framework = js.native
   var installAppDependencies: js.Any = js.native
   val isPrepackedAppAsar: scala.Boolean = js.native
   var isTwoPackageJsonProjectLayoutUsed: scala.Boolean = js.native
@@ -43,40 +43,36 @@ class Packager protected () extends js.Object {
   val projectDir: java.lang.String = js.native
   var readProjectMetadataIfTwoPackageStructureOrPrepacked: js.Any = js.native
   val relativeBuildResourcesDirname: java.lang.String = js.native
-  val repositoryInfo: js.Promise[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SourceRepositoryInfo */ _) | scala.Null
-  ] = js.native
+  val repositoryInfo: js.Promise[appDashBuilderDashLibLib.outCoreMod.SourceRepositoryInfo | scala.Null] = js.native
   val tempDirManager: builderDashUtilLib.builderDashUtilMod.TmpDir = js.native
   def _build(
-    configuration: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Configuration */ js.Any,
+    configuration: appDashBuilderDashLibLib.outConfigurationMod.Configuration,
     metadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata
   ): js.Promise[BuildResult] = js.native
   def _build(
-    configuration: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Configuration */ js.Any,
+    configuration: appDashBuilderDashLibLib.outConfigurationMod.Configuration,
     metadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata,
     devMetadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata
   ): js.Promise[BuildResult] = js.native
   def _build(
-    configuration: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Configuration */ js.Any,
+    configuration: appDashBuilderDashLibLib.outConfigurationMod.Configuration,
     metadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata,
     devMetadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata,
-    repositoryInfo: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SourceRepositoryInfo */ js.Any
+    repositoryInfo: appDashBuilderDashLibLib.outCoreMod.SourceRepositoryInfo
   ): js.Promise[BuildResult] = js.native
   def _build(
-    configuration: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Configuration */ js.Any,
+    configuration: appDashBuilderDashLibLib.outConfigurationMod.Configuration,
     metadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata,
     devMetadata: scala.Null,
-    repositoryInfo: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SourceRepositoryInfo */ js.Any
+    repositoryInfo: appDashBuilderDashLibLib.outCoreMod.SourceRepositoryInfo
   ): js.Promise[BuildResult] = js.native
   def addAfterPackHandler(
     handler: js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AfterPackContext */ /* context */ js.Any, 
+      /* context */ appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext, 
       js.Promise[_] | scala.Null
     ]
   ): scala.Unit = js.native
-  def afterPack(
-    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AfterPackContext */ js.Any
-  ): js.Promise[_] = js.native
+  def afterPack(context: appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext): js.Promise[_] = js.native
   def artifactCreated(
     handler: js.Function1[/* event */ appDashBuilderDashLibLib.outPackagerApiMod.ArtifactCreated, scala.Unit]
   ): Packager = js.native
@@ -89,7 +85,7 @@ class Packager protected () extends js.Object {
     */
   def dispatchArtifactCreated(event: appDashBuilderDashLibLib.outPackagerApiMod.ArtifactCreated): scala.Unit = js.native
   def stageDirPathCustomizer(
-    target: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Target */ js.Any,
+    target: appDashBuilderDashLibLib.outMod.Target,
     packager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],
     arch: builderDashUtilLib.outArchMod.Arch
   ): java.lang.String = js.native

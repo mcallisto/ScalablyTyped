@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-node-resolve"
-version := "5.0.2-a252e0"
-scalaVersion := "2.12.8"
+version := "5.0.3-fa1ce4"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-e82a53",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
-  "org.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20190322Z-d14ed6",
-  "org.scalablytyped" %%% "rollup" % "1.15.5-832dff",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-69283f",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-79c22c",
+  "org.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20190322Z-23658a",
+  "org.scalablytyped" %%% "rollup" % "1.15.6-974442",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

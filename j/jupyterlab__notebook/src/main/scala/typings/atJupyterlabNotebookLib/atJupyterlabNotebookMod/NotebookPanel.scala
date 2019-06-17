@@ -12,9 +12,6 @@ class NotebookPanel protected ()
   /**
     * Construct a new notebook panel.
     */
-  def this(options: atJupyterlabDocregistryLib.libDefaultMod.DocumentWidgetNs.IOptions[
-      atJupyterlabNotebookLib.libWidgetMod.Notebook, 
-      atJupyterlabNotebookLib.libModelMod.INotebookModel
-    ]) = this()
+  def this(options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentWidget.IOptions<Notebook, INotebookModel> */ js.Any) = this()
 }
 

@@ -12,7 +12,7 @@ Typings are for version 1.0
 | Keywords           | react-native, swipe, gesture |
 | # releases         | 2 |
 | # dependents       | 11 |
-| # downloads        | 968371 |
+| # downloads        | 1125840 |
 | # stars            | 5 |
 
 ## Links

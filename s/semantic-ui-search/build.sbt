@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-search"
-version := "2.2-dt-20180214Z-27446e"
-scalaVersion := "2.12.8"
+version := "2.2-dt-20180214Z-628961"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-219526",
-  "org.scalablytyped" %%% "semantic-ui-api" % "2.2-dt-20180214Z-9f7533",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-e29cf7",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-2868fc",
+  "org.scalablytyped" %%% "semantic-ui-api" % "2.2-dt-20180214Z-ae25e1",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-cea4c1",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

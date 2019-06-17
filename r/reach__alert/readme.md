@@ -10,9 +10,9 @@ Screenreader friendly alert messages.
 | ------------------ | :-------------: |
 | Full name          | @reach/alert |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 9 |
 | # dependents       | 5 |
-| # downloads        | 27364 |
+| # downloads        | 28765 |
 | # stars            | 0 |
 
 ## Links

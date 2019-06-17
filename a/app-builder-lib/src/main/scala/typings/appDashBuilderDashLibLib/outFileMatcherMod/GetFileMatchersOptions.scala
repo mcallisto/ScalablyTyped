@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetFileMatchersOptions extends js.Object {
-  val customBuildOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlatformSpecificBuildOptions */ js.Any
+  val customBuildOptions: appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.PlatformSpecificBuildOptions
   val defaultSrc: java.lang.String
   val globalOutDir: java.lang.String
   def macroExpander(pattern: java.lang.String): java.lang.String
@@ -15,7 +15,7 @@ trait GetFileMatchersOptions extends js.Object {
 object GetFileMatchersOptions {
   @scala.inline
   def apply(
-    customBuildOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlatformSpecificBuildOptions */ js.Any,
+    customBuildOptions: appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.PlatformSpecificBuildOptions,
     defaultSrc: java.lang.String,
     globalOutDir: java.lang.String,
     macroExpander: java.lang.String => java.lang.String

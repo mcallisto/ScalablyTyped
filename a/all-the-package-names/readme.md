@@ -12,7 +12,7 @@ A list of all the public package names on npm. Updated daily.
 | Keywords           | npm, registry, packages, names, list, words, filter, search, offline |
 | # releases         | 502 |
 | # dependents       | 14 |
-| # downloads        | 466041 |
+| # downloads        | 460472 |
 | # stars            | 6 |
 
 ## Links

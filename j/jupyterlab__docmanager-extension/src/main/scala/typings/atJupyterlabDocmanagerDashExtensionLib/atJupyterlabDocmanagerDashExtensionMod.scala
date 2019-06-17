@@ -11,8 +11,6 @@ object atJupyterlabDocmanagerDashExtensionMod extends js.Object {
   /**
     * The default document manager provider.
     */
-  val default: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLabPlugin[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentManager */ js.Any
-  ] = js.native
+  val default: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLabPlugin<IDocumentManager> */ js.Any = js.native
 }
 

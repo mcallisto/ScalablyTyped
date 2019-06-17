@@ -1,7 +1,7 @@
 
 # Scala.js typings for esfx__disposable
 
-Typings are for version 1.0.0-pre.5
+Typings are for version 1.0.0-pre.8
 
 ## Library description:
 A low-level API for defining explicit resource management.
@@ -10,9 +10,9 @@ A low-level API for defining explicit resource management.
 | ------------------ | :-------------: |
 | Full name          | @esfx/disposable |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 485 |
+| # releases         | 8 |
+| # dependents       | 6 |
+| # downloads        | 2544 |
 | # stars            | 0 |
 
 ## Links

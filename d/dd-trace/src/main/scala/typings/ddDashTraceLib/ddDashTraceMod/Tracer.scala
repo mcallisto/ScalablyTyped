@@ -5,19 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @js.native
-trait Tracer extends js.Object {
-  /**
-    * Returns a SpanContext instance extracted from `carrier` in the given
-    * `format`.
-    * @param  {string} format The format of the carrier.
-    * @param  {any} carrier The carrier object.
-    * @return {SpanContext}
-    *         The extracted SpanContext, or null if no such SpanContext could
-    *         be found in `carrier`
-    */
-  def extract(format: java.lang.String, carrier: js.Any): SpanContext | scala.Null = js.native
+@js.native
+trait Tracer
+  extends opentracingLib.opentracingMod.Tracer {
   /**
     * Initializes the tracer. This should be called before importing other libraries.
     */
@@ -39,14 +29,6 @@ trait Tracer extends js.Object {
     * Returns a reference to the current scope.
     */
   def scope(): Scope = js.native
-  /**
-    * Starts and returns a new Span representing a logical unit of work.
-    * @param {string} name The name of the operation.
-    * @param {SpanOptions} [options] Options for the newly created span.
-    * @returns {Span} A new Span object.
-    */
-  def startSpan(name: java.lang.String): Span = js.native
-  def startSpan(name: java.lang.String, options: opentracingLib.libTracerMod.SpanOptions): Span = js.native
   /**
     * Instruments a function by automatically creating a span activated on its
     * scope.

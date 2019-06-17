@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "async-cache"
-version := "1.1-dt-20180214Z-1d4410"
-scalaVersion := "2.12.8"
+version := "1.1-dt-20180214Z-dcfc32"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "lru-cache" % "5.1-dt-20190222Z-66eda3",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "lru-cache" % "5.1-dt-20190222Z-62f581",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

@@ -11,6 +11,6 @@ object atJupyterlabRunningDashExtensionMod extends js.Object {
   /**
     * The default running sessions extension.
     */
-  val default: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLabPlugin[scala.Unit] = js.native
+  val default: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLabPlugin<void> */ js.Any = js.native
 }
 

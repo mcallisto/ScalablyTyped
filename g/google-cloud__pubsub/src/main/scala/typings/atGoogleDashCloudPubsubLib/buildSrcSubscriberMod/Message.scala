@@ -14,7 +14,7 @@ class Message protected () extends js.Object {
     * @param {Subscriber} sub The parent subscriber.
     * @param {object} message The raw message response.
     */
-  def this(sub: Subscriber, hasAckIdMessage: ReceivedMessage) = this()
+  def this(sub: Subscriber, hasAckIdMessage: atGoogleDashCloudPubsubLib.buildProtoPubsubMod.googleNs.pubsubNs.v1Ns.IReceivedMessage) = this()
   var _handled: js.Any = js.native
   var _length: js.Any = js.native
   var _subscriber: js.Any = js.native
@@ -27,6 +27,7 @@ class Message protected () extends js.Object {
     * @type {number}
     */
   val length: scala.Double = js.native
+  var orderingKey: js.UndefOr[java.lang.String] = js.native
   var publishTime: atGoogleDashCloudPreciseDashDateLib.atGoogleDashCloudPreciseDashDateMod.PreciseDate = js.native
   var received: scala.Double = js.native
   /**

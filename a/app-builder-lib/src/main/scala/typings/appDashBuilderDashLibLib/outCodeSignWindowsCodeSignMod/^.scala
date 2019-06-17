@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def getCertInfo(file: java.lang.String, password: java.lang.String): js.Promise[CertificateInfo] = js.native
   def getCertificateFromStoreInfo(
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WindowsConfiguration */ js.Any,
+    options: appDashBuilderDashLibLib.outOptionsWinOptionsMod.WindowsConfiguration,
     vm: appDashBuilderDashLibLib.outVmVmMod.VmManager
   ): js.Promise[CertificateFromStoreInfo] = js.native
   def getSignVendorPath(): js.Promise[java.lang.String] = js.native

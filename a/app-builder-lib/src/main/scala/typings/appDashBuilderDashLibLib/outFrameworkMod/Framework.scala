@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Framework extends js.Object {
   var afterPack: js.UndefOr[
     js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AfterPackContext */ /* context */ js.Any, 
+      /* context */ appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext, 
       js.Promise[_]
     ]
   ] = js.undefined
@@ -18,19 +18,19 @@ trait Framework extends js.Object {
   val distMacOsAppName: java.lang.String
   var getDefaultIcon: js.UndefOr[
     js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ /* platform */ js.Any, 
+      /* platform */ appDashBuilderDashLibLib.outMod.Platform, 
       java.lang.String | scala.Null
     ]
   ] = js.undefined
   var getExcludedDependencies: js.UndefOr[
     js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ /* platform */ js.Any, 
+      /* platform */ appDashBuilderDashLibLib.outMod.Platform, 
       js.Array[java.lang.String] | scala.Null
     ]
   ] = js.undefined
   var getMainFile: js.UndefOr[
     js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ /* platform */ js.Any, 
+      /* platform */ appDashBuilderDashLibLib.outMod.Platform, 
       java.lang.String | scala.Null
     ]
   ] = js.undefined
@@ -53,12 +53,12 @@ object Framework {
     name: java.lang.String,
     prepareApplicationStageDirectory: PrepareApplicationStageDirectoryOptions => js.Promise[_],
     version: java.lang.String,
-    afterPack: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AfterPackContext */ /* context */ js.Any => js.Promise[_] = null,
+    afterPack: /* context */ appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext => js.Promise[_] = null,
     beforeCopyExtraFiles: /* options */ BeforeCopyExtraFilesOptions => js.Promise[_] = null,
     createTransformer: () => builderDashUtilLib.outFsMod.FileTransformer | scala.Null = null,
-    getDefaultIcon: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ /* platform */ js.Any => java.lang.String | scala.Null = null,
-    getExcludedDependencies: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ /* platform */ js.Any => js.Array[java.lang.String] | scala.Null = null,
-    getMainFile: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ /* platform */ js.Any => java.lang.String | scala.Null = null
+    getDefaultIcon: /* platform */ appDashBuilderDashLibLib.outMod.Platform => java.lang.String | scala.Null = null,
+    getExcludedDependencies: /* platform */ appDashBuilderDashLibLib.outMod.Platform => js.Array[java.lang.String] | scala.Null = null,
+    getMainFile: /* platform */ appDashBuilderDashLibLib.outMod.Platform => java.lang.String | scala.Null = null
   ): Framework = {
     val __obj = js.Dynamic.literal(defaultAppIdPrefix = defaultAppIdPrefix, distMacOsAppName = distMacOsAppName, isCopyElevateHelper = isCopyElevateHelper, isNpmRebuildRequired = isNpmRebuildRequired, macOsDefaultTargets = macOsDefaultTargets, name = name, prepareApplicationStageDirectory = js.Any.fromFunction1(prepareApplicationStageDirectory), version = version)
     if (afterPack != null) __obj.updateDynamic("afterPack")(js.Any.fromFunction1(afterPack))

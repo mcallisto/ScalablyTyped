@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("@jupyterlab/docregistry/lib/default", "DocumentWidget")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget because var conflicts: _disposed, _flags, _layout, _parent, id, layout, parent. Inlined context */ @JSImport("@jupyterlab/docregistry/lib/default", "DocumentWidget")
 @js.native
-class DocumentWidget[T /* <: atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget */, U /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IModel */ js.Any */] protected ()
+class DocumentWidget[T /* <: atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget */, U /* <: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel */] protected ()
   extends atJupyterlabApputilsLib.atJupyterlabApputilsMod.MainAreaWidget[T] {
   def this(options: atJupyterlabDocregistryLib.libDefaultMod.DocumentWidgetNs.IOptions[T, U]) = this()
   /**
@@ -23,6 +23,6 @@ class DocumentWidget[T /* <: atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget */
     * Handle a path change.
     */
   var _onPathChanged: js.Any = js.native
-  val context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IContext<U> */ js.Any = js.native
+  val context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IContext[U] = js.native
 }
 

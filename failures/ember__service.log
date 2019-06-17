@@ -1,5 +1,5 @@
 [debug] PhaseRunner.scala:84 Success [id => @ember/service, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__service/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__service),TsIdentLibraryScoped(ember,Some(service))),TsIdentModule(Some(ember),List(service))) [id => @ember/service, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/ember__service/index.d.ts),FromFolder(InFolder(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/ember__service),TsIdentLibraryScoped(ember,Some(service))),TsIdentModule(Some(ember),List(service))) [id => @ember/service, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(ember),List(service)) [id => @ember/service, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibraryScoped(ember,Some(service)) [id => @ember/service, phase => typescript] 
 [info ] UnionTypesFromKeyOf.scala:11 Expanded keyof TsQIdent(List(TsIdentLibraryScoped(ember,Some(service)), TsIdentModule(Some(ember),List(service)), TsIdentSimple(Registry))) [id => @ember/service, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/service) / TsDeclFunction(inject) / TsFunSig() / TsTypeParam() / TsTypeKeyOf())] 
@@ -11,4 +11,3 @@
 [debug] PhaseRunner.scala:84 Success [id => @ember/service, phase => scala.js] 
 [warn ] PhaseRunner.scala:70 Failed because of, [@ember/object => Compilation failed] [id => @ember/service, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [@ember/object => Compilation failed] [id => @ember/service, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [@ember/object => Compilation failed] [id => @ember/service, phase => publish] 

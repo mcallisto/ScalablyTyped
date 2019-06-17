@@ -12,7 +12,7 @@ Error types for use throughout SocketCluster
 | Keywords           | errors, socketcluster |
 | # releases         | 10 |
 | # dependents       | 19 |
-| # downloads        | 3455244 |
+| # downloads        | 3517275 |
 | # stars            | 0 |
 
 ## Links

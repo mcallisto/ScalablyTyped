@@ -11,7 +11,7 @@ package object buildSrcTopicMod {
   type GetTopicCallback = TopicCallback
   type GetTopicMetadataCallback = MetadataCallback
   type GetTopicMetadataResponse = MetadataResponse
-  type GetTopicOptions = googleDashGaxLib.buildSrcGaxMod.CallOptions with atGoogleDashCloudPubsubLib.Anon_AutoCreate
+  type GetTopicOptions = (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any) with atGoogleDashCloudPubsubLib.Anon_AutoCreate
   type GetTopicResponse = TopicResponse
   type GetTopicSubscriptionsCallback = atGoogleDashCloudPubsubLib.buildSrcPubsubMod.RequestCallback[
     atGoogleDashCloudPubsubLib.buildSrcSubscriptionMod.Subscription, 

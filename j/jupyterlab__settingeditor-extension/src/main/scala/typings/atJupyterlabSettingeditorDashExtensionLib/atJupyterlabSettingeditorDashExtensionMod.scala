@@ -11,6 +11,6 @@ object atJupyterlabSettingeditorDashExtensionMod extends js.Object {
   /**
     * The default setting editor extension.
     */
-  val default: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLabPlugin[atJupyterlabSettingeditorLib.atJupyterlabSettingeditorMod.ISettingEditorTracker] = js.native
+  val default: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLabPlugin<ISettingEditorTracker> */ js.Any = js.native
 }
 

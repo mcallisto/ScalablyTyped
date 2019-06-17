@@ -10,9 +10,9 @@ Ethereum JavaScript API
 | ------------------ | :-------------: |
 | Full name          | web3 |
 | Keywords           | Ethereum, JavaScript, API |
-| # releases         | 62 |
-| # dependents       | 1163 |
-| # downloads        | 5081856 |
+| # releases         | 64 |
+| # dependents       | 1218 |
+| # downloads        | 5292850 |
 | # stars            | 21 |
 
 ## Links

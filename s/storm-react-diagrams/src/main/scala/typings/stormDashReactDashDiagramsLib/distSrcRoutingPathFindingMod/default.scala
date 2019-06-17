@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("storm-react-diagrams/dist/src/routing/PathFinding", JSImport.Default)
 @js.native
 class default protected () extends PathFinding {
-  def this(diagramEngine: stormDashReactDashDiagramsLib.distSrcMainMod.DiagramEngine) = this()
+  def this(diagramEngine: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DiagramEngine */ js.Any) = this()
   /* CompleteClass */
-  override var diagramEngine: stormDashReactDashDiagramsLib.distSrcMainMod.DiagramEngine = js.native
+  override var diagramEngine: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DiagramEngine */ js.Any = js.native
   /* CompleteClass */
   override var instance: js.Any = js.native
   /**

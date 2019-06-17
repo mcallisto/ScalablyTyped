@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("tslint/lib/linter", "Linter")
 @js.native
 class Linter protected () extends js.Object {
-  def this(options: tslintLib.libMod.ILinterOptions) = this()
-  def this(options: tslintLib.libMod.ILinterOptions, program: typescriptLib.typescriptMod.Program) = this()
+  def this(options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ILinterOptions */ js.Any) = this()
+  def this(options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ILinterOptions */ js.Any, program: typescriptLib.typescriptMod.Program) = this()
   var applyAllFixes: js.Any = js.native
   var applyRule: js.Any = js.native
   var failures: js.Any = js.native
@@ -26,7 +26,7 @@ class Linter protected () extends js.Object {
     source: java.lang.String,
     fixableFailures: js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure]
   ): java.lang.String = js.native
-  def getResult(): tslintLib.libMod.LintResult = js.native
+  def getResult(): js.Any = js.native
   def lint(fileName: java.lang.String, source: java.lang.String): scala.Unit = js.native
   def lint(
     fileName: java.lang.String,

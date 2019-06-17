@@ -13,7 +13,7 @@ class FileEditorCodeWrapper protected () extends js.Object {
     * Construct a new editor widget.
     */
   def this(options: atJupyterlabFileeditorLib.libWidgetMod.FileEditorNs.IOptions) = this()
-  var _context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.Context = js.native
+  var _context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any = js.native
   /**
     * Handle a change to the collaborators on the model
     * by updating UI elements associated with them.
@@ -31,7 +31,7 @@ class FileEditorCodeWrapper protected () extends js.Object {
   /**
     * Get the context for the editor widget.
     */
-  val context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.Context = js.native
+  val context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any = js.native
   /**
     * A promise that resolves when the file editor is ready.
     */

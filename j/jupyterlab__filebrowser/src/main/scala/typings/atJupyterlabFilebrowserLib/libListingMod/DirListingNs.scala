@@ -44,7 +44,7 @@ object DirListingNs extends js.Object {
     def createDragImage(
       node: stdLib.HTMLElement,
       count: scala.Double,
-      fileType: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IFileType
+      fileType: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IFileType */ js.Any
     ): stdLib.HTMLElement = js.native
     /**
       * Create a new item node for a dir listing.
@@ -93,7 +93,7 @@ object DirListingNs extends js.Object {
     def updateItemNode(
       node: stdLib.HTMLElement,
       model: atJupyterlabServicesLib.libContentsMod.ContentsNs.IModel,
-      fileType: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IFileType
+      fileType: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IFileType */ js.Any
     ): scala.Unit = js.native
   }
   

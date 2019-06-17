@@ -1,5 +1,5 @@
 [debug] PhaseRunner.scala:84 Success [id => amap-js-api-autocomplete, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/amap-js-api-autocomplete/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/amap-js-api-autocomplete),TsIdentLibrarySimple(amap-js-api-autocomplete)),TsIdentModule(None,List(amap-js-api-autocomplete))) [id => amap-js-api-autocomplete, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/amap-js-api-autocomplete/index.d.ts),FromFolder(InFolder(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/amap-js-api-autocomplete),TsIdentLibrarySimple(amap-js-api-autocomplete)),TsIdentModule(None,List(amap-js-api-autocomplete))) [id => amap-js-api-autocomplete, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(amap-js-api-autocomplete) [id => amap-js-api-autocomplete, phase => typescript] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Info) [id => amap-js-api-autocomplete, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(AMap) / TsDeclNamespace(Autocomplete) / TsDeclInterface(EventMap) / TsMemberProperty(complete) / TsTypeRef() / TsTypeUnion() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Info) [id => amap-js-api-autocomplete, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(AMap) / TsDeclNamespace(Autocomplete) / TsDeclInterface(EventMap) / TsMemberProperty(error) / TsTypeRef() / TsTypeObject())] 
@@ -10,4 +10,3 @@
 [debug] PhaseRunner.scala:84 Success [id => amap-js-api-autocomplete, phase => scala.js] 
 [warn ] PhaseRunner.scala:70 Failed because of, [amap-js-api => Compilation failed] [id => amap-js-api-autocomplete, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [amap-js-api => Compilation failed] [id => amap-js-api-autocomplete, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [amap-js-api => Compilation failed] [id => amap-js-api-autocomplete, phase => publish] 

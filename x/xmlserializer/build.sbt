@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "xmlserializer"
-version := "0.6-dt-20190125Z-763eb4"
-scalaVersion := "2.12.8"
+version := "0.6-dt-20190125Z-33428e"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "parse5" % "5.0-dt-20180611Z-8b0339",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "parse5" % "5.0-dt-20180611Z-0e5283",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

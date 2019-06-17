@@ -10,9 +10,12 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def getOpenPath(contentsManager: js.Any): js.Promise[js.UndefOr[java.lang.String]] = js.native
   def isValidFileName(name: java.lang.String): scala.Boolean = js.native
-  def renameDialog(manager: atJupyterlabDocmanagerLib.libManagerMod.IDocumentManager, oldPath: java.lang.String): js.Promise[atJupyterlabServicesLib.libContentsMod.ContentsNs.IModel | scala.Null] = js.native
+  def renameDialog(
+    manager: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentManager */ js.Any,
+    oldPath: java.lang.String
+  ): js.Promise[atJupyterlabServicesLib.libContentsMod.ContentsNs.IModel | scala.Null] = js.native
   def renameFile(
-    manager: atJupyterlabDocmanagerLib.libManagerMod.IDocumentManager,
+    manager: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentManager */ js.Any,
     oldPath: java.lang.String,
     newPath: java.lang.String
   ): js.Promise[atJupyterlabServicesLib.libContentsMod.ContentsNs.IModel | scala.Null] = js.native

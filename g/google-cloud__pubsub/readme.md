@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-cloud__pubsub
 
-Typings are for version 0.28.1
+Typings are for version 0.29.1
 
 ## Library description:
 Cloud Pub/Sub Client Library for Node.js
@@ -49,6 +49,63 @@ These comments are from the typescript definitions and might be useful:
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ */
+/**
+ * @namespace google.pubsub.v1
+ */
+/**
+ * @namespace google.protobuf
+ */
+/**
+ * The default export of the `@google-cloud/pubsub` package is the
+ * {@link PubSub} class.
+ *
+ * See {@link PubSub} and {@link ClientConfig} for client methods and
+ * configuration options.
+ *
+ * @module {PubSub} @google-cloud/pubsub
+ * @alias nodejs-pubsub
+ *
+ * @example <caption>Install the client library with <a
+ * href="https://www.npmjs.com/">npm</a>:</caption> npm install --save
+ * @google-cloud/pubsub
+ *
+ * @example <caption>Import the client library</caption>
+ * const {PubSub} = require('@google-cloud/pubsub');
+ *
+ * @example <caption>Create a client that uses <a
+ * href="https://cloud.google.com/docs/authentication/production#providing_credentials_to_your_application">Application
+ * Default Credentials (ADC)</a>:</caption> const pubsub = new PubSub();
+ *
+ * @example <caption>Create a client with <a
+ * href="https://cloud.google.com/docs/authentication/production#obtaining_and_providing_service_account_credentials_manually">explicit
+ * credentials</a>:</caption> const pubsub = new PubSub({ projectId:
+ * 'your-project-id', keyFilename: '/path/to/keyfile.json'
+ * });
+ *
+ * @example <caption>include:samples/quickstart.js</caption>
+ * region_tag:pubsub_quickstart_create_topic
+ * Full quickstart example:
+ */
+/**
+ * @name PubSub.v1
+ * @see v1.PublisherClient
+ * @see v1.SubscriberClient
+ * @type {object}
+ * @property {constructor} PublisherClient
+ *     Reference to {@link v1.PublisherClient}.
+ * @property {constructor} SubscriberClient
+ *     Reference to {@link v1.SubscriberClient}.
+ */
+/**
+ * @name module:@google-cloud/pubsub.v1
+ * @see v1.PublisherClient
+ * @see v1.SubscriberClient
+ * @type {object}
+ * @property {constructor} PublisherClient
+ *     Reference to {@link v1.PublisherClient}.
+ * @property {constructor} SubscriberClient
+ *     Reference to {@link v1.SubscriberClient}.
  */
 /*!
  * Copyright 2018 Google Inc. All Rights Reserved.

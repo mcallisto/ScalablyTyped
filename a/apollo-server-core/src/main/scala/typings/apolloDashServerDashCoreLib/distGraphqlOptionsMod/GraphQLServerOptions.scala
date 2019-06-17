@@ -10,7 +10,7 @@ trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
     apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache[java.lang.String]
   ] = js.undefined
   var cacheControl: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any
+    apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions
   ] = js.undefined
   var context: js.UndefOr[TContext | js.Function0[scala.Nothing]] = js.undefined
   var dataSources: js.UndefOr[js.Function0[DataSources[TContext]]] = js.undefined
@@ -34,7 +34,7 @@ trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
   var formatError: js.UndefOr[
     js.Function1[
       /* error */ graphqlLib.graphqlMod.GraphQLError, 
-      graphqlLib.errorFormatErrorMod.GraphQLFormattedError
+      graphqlLib.errorFormatErrorMod.GraphQLFormattedError[stdLib.Record[java.lang.String, _]]
     ]
   ] = js.undefined
   var formatResponse: js.UndefOr[js.Function] = js.undefined
@@ -58,7 +58,7 @@ object GraphQLServerOptions {
   def apply[TContext, TRootValue](
     schema: graphqlLib.graphqlMod.GraphQLSchema,
     cache: apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache[java.lang.String] = null,
-    cacheControl: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any = null,
+    cacheControl: apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions = null,
     context: TContext | js.Function0[scala.Nothing] = null,
     dataSources: () => DataSources[TContext] = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
@@ -70,7 +70,7 @@ object GraphQLServerOptions {
       ]
     ] = null,
     fieldResolver: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, TContext, org.scalablytyped.runtime.StringDictionary[_]] = null,
-    formatError: /* error */ graphqlLib.graphqlMod.GraphQLError => graphqlLib.errorFormatErrorMod.GraphQLFormattedError = null,
+    formatError: /* error */ graphqlLib.graphqlMod.GraphQLError => graphqlLib.errorFormatErrorMod.GraphQLFormattedError[stdLib.Record[java.lang.String, _]] = null,
     formatResponse: js.Function = null,
     parseOptions: graphqlDashToolsLib.distInterfacesMod.GraphQLParseOptions = null,
     persistedQueries: PersistedQueryOptions = null,

@@ -11,9 +11,9 @@ object atJupyterlabTerminalDashExtensionMod extends js.Object {
   /**
     * The default terminal extension.
     */
-  val default: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLabPlugin[atJupyterlabTerminalLib.atJupyterlabTerminalMod.ITerminalTracker] = js.native
+  val default: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLabPlugin<ITerminalTracker> */ js.Any = js.native
   def addCommands(
-    app: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLab,
+    app: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLab */ js.Any,
     services: atJupyterlabServicesLib.atJupyterlabServicesMod.ServiceManager,
     tracker: atJupyterlabApputilsLib.atJupyterlabApputilsMod.InstanceTracker[
       atJupyterlabApputilsLib.atJupyterlabApputilsMod.MainAreaWidget[atJupyterlabTerminalLib.atJupyterlabTerminalMod.Terminal]

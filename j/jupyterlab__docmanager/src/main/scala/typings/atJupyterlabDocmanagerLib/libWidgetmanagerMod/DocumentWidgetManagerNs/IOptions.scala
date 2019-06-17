@@ -12,12 +12,14 @@ trait IOptions extends js.Object {
   /**
     * A document registry instance.
     */
-  var registry: atJupyterlabDocregistryLib.atJupyterlabDocregistryMod.DocumentRegistry
+  var registry: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry */ js.Any
 }
 
 object IOptions {
   @scala.inline
-  def apply(registry: atJupyterlabDocregistryLib.atJupyterlabDocregistryMod.DocumentRegistry): IOptions = {
+  def apply(
+    registry: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry */ js.Any
+  ): IOptions = {
     val __obj = js.Dynamic.literal(registry = registry)
   
     __obj.asInstanceOf[IOptions]

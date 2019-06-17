@@ -12,7 +12,7 @@ Filesystem-buffered, passthrough stream that buffers indefinitely rather than pr
 | Keywords           | stream, buffer, file, split, clone |
 | # releases         | 15 |
 | # dependents       | 2 |
-| # downloads        | 3960475 |
+| # downloads        | 3173468 |
 | # stars            | 0 |
 
 ## Links

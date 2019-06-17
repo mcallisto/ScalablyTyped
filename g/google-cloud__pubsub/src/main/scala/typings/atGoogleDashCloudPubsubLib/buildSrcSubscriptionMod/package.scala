@@ -12,7 +12,7 @@ package object buildSrcSubscriptionMod {
   type GetSubscriptionCallback = SubscriptionCallback
   type GetSubscriptionMetadataCallback = MetadataCallback
   type GetSubscriptionMetadataResponse = MetadataResponse
-  type GetSubscriptionOptions = googleDashGaxLib.buildSrcGaxMod.CallOptions with atGoogleDashCloudPubsubLib.Anon_AutoCreate
+  type GetSubscriptionOptions = (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any) with atGoogleDashCloudPubsubLib.Anon_AutoCreate
   type GetSubscriptionResponse = SubscriptionResponse
   type MetadataCallback = atGoogleDashCloudPubsubLib.buildSrcPubsubMod.RequestCallback[
     atGoogleDashCloudPubsubLib.buildProtoPubsubMod.googleNs.pubsubNs.v1Ns.ISubscription, 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 object twilioDashChatLibStrings {
   @js.native
   sealed trait ascending
-    extends twilioDashChatLib.twilioDashChatMod.ClientNs.ChannelSortingOrder
+    extends twilioDashChatLib.libClientMod.ClientNs.ChannelSortingOrder
   
   @js.native
   sealed trait attributes
@@ -47,7 +47,7 @@ object twilioDashChatLibStrings {
   
   @js.native
   sealed trait debug
-    extends twilioDashChatLib.twilioDashChatMod.ClientNs._LogLevel
+    extends twilioDashChatLib.libClientMod.ClientNs._LogLevel
   
   @js.native
   sealed trait default
@@ -55,21 +55,21 @@ object twilioDashChatLibStrings {
   
   @js.native
   sealed trait descending
-    extends twilioDashChatLib.twilioDashChatMod.ClientNs.ChannelSortingOrder
+    extends twilioDashChatLib.libClientMod.ClientNs.ChannelSortingOrder
   
   @js.native
   sealed trait error
-    extends twilioDashChatLib.twilioDashChatMod.ClientNs._LogLevel
+    extends twilioDashChatLib.libClientMod.ClientNs._LogLevel
   
   @js.native
   sealed trait friendlyName
-    extends twilioDashChatLib.twilioDashChatMod.ClientNs.ChannelSortingCriteria
+    extends twilioDashChatLib.libClientMod.ClientNs.ChannelSortingCriteria
        with twilioDashChatLib.libUserMod.UserNs.UpdateReason
        with twilioDashChatLib.libChannelMod.ChannelNs.UpdateReason
   
   @js.native
   sealed trait info
-    extends twilioDashChatLib.twilioDashChatMod.ClientNs._LogLevel
+    extends twilioDashChatLib.libClientMod.ClientNs._LogLevel
   
   @js.native
   sealed trait initializing
@@ -98,7 +98,7 @@ object twilioDashChatLibStrings {
   
   @js.native
   sealed trait lastMessage
-    extends twilioDashChatLib.twilioDashChatMod.ClientNs.ChannelSortingCriteria
+    extends twilioDashChatLib.libClientMod.ClientNs.ChannelSortingCriteria
        with twilioDashChatLib.libChannelMod.ChannelNs.UpdateReason
   
   @js.native
@@ -139,7 +139,7 @@ object twilioDashChatLibStrings {
   
   @js.native
   sealed trait silent
-    extends twilioDashChatLib.twilioDashChatMod.ClientNs._LogLevel
+    extends twilioDashChatLib.libClientMod.ClientNs._LogLevel
   
   @js.native
   sealed trait sms
@@ -171,7 +171,7 @@ object twilioDashChatLibStrings {
   
   @js.native
   sealed trait trace
-    extends twilioDashChatLib.twilioDashChatMod.ClientNs._LogLevel
+    extends twilioDashChatLib.libClientMod.ClientNs._LogLevel
   
   @js.native
   sealed trait twilioDOTchannelDOTadded_to_channel
@@ -191,7 +191,7 @@ object twilioDashChatLibStrings {
   
   @js.native
   sealed trait uniqueName
-    extends twilioDashChatLib.twilioDashChatMod.ClientNs.ChannelSortingCriteria
+    extends twilioDashChatLib.libClientMod.ClientNs.ChannelSortingCriteria
        with twilioDashChatLib.libChannelMod.ChannelNs.UpdateReason
   
   @js.native
@@ -204,7 +204,7 @@ object twilioDashChatLibStrings {
   
   @js.native
   sealed trait warn
-    extends twilioDashChatLib.twilioDashChatMod.ClientNs._LogLevel
+    extends twilioDashChatLib.libClientMod.ClientNs._LogLevel
   
   @scala.inline
   def ascending: ascending = "ascending".asInstanceOf[ascending]

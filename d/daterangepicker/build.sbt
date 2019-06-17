@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "daterangepicker"
-version := "3.0-dt-20190212Z-175ff4"
-scalaVersion := "2.12.8"
+version := "3.0-dt-20190212Z-f51673"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-219526",
-  "org.scalablytyped" %%% "moment" % "2.24.0-a0c00b",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-e29cf7",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-2868fc",
+  "org.scalablytyped" %%% "moment" % "2.24.0-31c23a",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-cea4c1",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

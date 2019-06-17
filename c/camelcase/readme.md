@@ -10,9 +10,9 @@ Convert a dash/dot/underscore/space separated string to camelCase or PascalCase:
 | ------------------ | :-------------: |
 | Full name          | camelcase |
 | Keywords           | camelcase, camel-case, camel, case, dash, hyphen, dot, underscore, separator, string, text, convert, pascalcase, pascal-case |
-| # releases         | 6 |
-| # dependents       | 933 |
-| # downloads        | 968134838 |
+| # releases         | 4 |
+| # dependents       | 896 |
+| # downloads        | 930555411 |
 | # stars            | 28 |
 
 ## Links

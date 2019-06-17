@@ -89,7 +89,7 @@ class FileBrowserModel protected ()
   /**
     * The document manager instance used by the file browser model.
     */
-  val manager: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentManager */ js.Any = js.native
+  val manager: atJupyterlabDocmanagerLib.libManagerMod.IDocumentManager = js.native
   /**
     * Get the current path.
     */

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HttpContext extends js.Object {
-  var container: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify inversifyInterfaces.Container */ js.Any
+  var container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container
   var request: expressLib.expressMod.Request
   var response: expressLib.expressMod.Response
   var user: Principal
@@ -15,7 +15,7 @@ trait HttpContext extends js.Object {
 object HttpContext {
   @scala.inline
   def apply(
-    container: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify inversifyInterfaces.Container */ js.Any,
+    container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container,
     request: expressLib.expressMod.Request,
     response: expressLib.expressMod.Response,
     user: Principal

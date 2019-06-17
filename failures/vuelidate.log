@@ -2,12 +2,12 @@
 [debug] PhaseRunner.scala:84 Success [id => vuelidate, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => vuelidate, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => vuelidate, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate))) [id => vuelidate, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/vuelidate/index.d.ts),FromFolder(InFolder(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate))) [id => vuelidate, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(vuelidate)) [id => vuelidate, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate/lib/validators.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate, lib, validators))) [id => vuelidate, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/vuelidate/lib/validators.d.ts),FromFolder(InFolder(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate, lib, validators))) [id => vuelidate, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(vuelidate, lib, validators)) [id => vuelidate, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate/vue.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate, vue))) [id => vuelidate, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate/vuelidate.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate, vuelidate))) [id => vuelidate, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/vuelidate/vue.d.ts),FromFolder(InFolder(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate, vue))) [id => vuelidate, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/vuelidate/vuelidate.d.ts),FromFolder(InFolder(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate, vuelidate))) [id => vuelidate, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(vuelidate, vuelidate)) [id => vuelidate, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(vuelidate) [id => vuelidate, phase => typescript] 
 [warn ] SimplifyRecursiveTypeAlias.scala:14 Simplified recursive type alias vuelidate.vue/types/vue.ValidationProperties<V[P]> [id => vuelidate, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(vue/types/vue) / TsDeclTypeAlias(ValidationProperties) / TsTypeObject() / TsMemberTypeMapped() / TsTypeIntersect() / TsTypeRef())] 
@@ -15,6 +15,12 @@
 [debug] PhaseRunner.scala:84 Success [id => vuelidate, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing vuelidate [id => vuelidate, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => vuelidate, phase => scala.js] 
-[error] RuleDecl.scala:9 illegal cyclic reference involving trait RuleDecl,   extends /* rule */ org.scalablytyped.runtime.StringDictionary[ValidationDecl | GroupDecl | AsyncDecl | NestedDecl] [id => vuelidate, phase => build] 
+[warn ] Phase3Compile.scala:206 Building vuelidate... [id => vuelidate, phase => build] 
+[error] Phase3Compile.scala:225 [E] [E1] src/main/scala/typings/vuelidateLib/typesOptionsMod/RuleDecl.scala:9:106
+[E]      illegal cyclic reference involving trait RuleDecl
+[E]      L9:   extends /* rule */ org.scalablytyped.runtime.StringDictionary[ValidationDecl | GroupDecl | AsyncDecl | NestedDecl]
+[E]                                                                                                                   ^
+[E] src/main/scala/typings/vuelidateLib/typesOptionsMod/RuleDecl.scala: L9 [E1]
+[E] Failed to compile 'vuelidate'
+ [id => vuelidate, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [vuelidate => Compilation failed] [id => vuelidate, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [vuelidate => Compilation failed] [id => vuelidate, phase => publish] 

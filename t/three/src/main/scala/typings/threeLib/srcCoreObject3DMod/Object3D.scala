@@ -18,6 +18,17 @@ class Object3D ()
     */
   var children: js.Array[Object3D] = js.native
   /**
+    * Custom depth material to be used when rendering to the depth map. Can only be used in context of meshes.
+    * When shadow-casting with a DirectionalLight or SpotLight, if you are (a) modifying vertex positions in
+    * the vertex shader, (b) using a displacement map, (c) using an alpha map with alphaTest, or (d) using a
+    * transparent texture with alphaTest, you must specify a customDepthMaterial for proper shadows.
+    */
+  var customDepthMaterial: threeLib.srcMaterialsMaterialMod.Material = js.native
+  /**
+    * Same as customDepthMaterial, but used with PointLight.
+    */
+  var customDistanceMaterial: threeLib.srcMaterialsMaterialMod.Material = js.native
+  /**
     * When this is set, it checks every frame if the object is in the frustum of the camera. Otherwise the object gets drawn every frame even if it isn't visible.
     */
   var frustumCulled: scala.Boolean = js.native
@@ -107,6 +118,10 @@ class Object3D ()
     */
   def applyMatrix(matrix: threeLib.srcMathMatrix4Mod.Matrix4): scala.Unit = js.native
   def applyQuaternion(quaternion: threeLib.srcMathQuaternionMod.Quaternion): this.type = js.native
+  /**
+    * Adds object as a child of this, while maintaining the object's world transform.
+    */
+  def attach(`object`: Object3D): this.type = js.native
   def clone(recursive: scala.Boolean): this.type = js.native
   /**
     *

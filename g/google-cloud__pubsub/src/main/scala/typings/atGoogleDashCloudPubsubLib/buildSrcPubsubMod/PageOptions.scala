@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait PageOptions extends js.Object {
   var autoPaginate: js.UndefOr[scala.Boolean] = js.undefined
-  var gaxOpts: js.UndefOr[googleDashGaxLib.buildSrcGaxMod.CallOptions] = js.undefined
+  var gaxOpts: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any
+  ] = js.undefined
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -16,7 +18,7 @@ object PageOptions {
   @scala.inline
   def apply(
     autoPaginate: js.UndefOr[scala.Boolean] = js.undefined,
-    gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions = null,
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any = null,
     pageSize: scala.Int | scala.Double = null,
     pageToken: java.lang.String = null
   ): PageOptions = {

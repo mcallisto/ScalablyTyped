@@ -4515,6 +4515,8 @@ object googleNs extends js.Object {
         var data: js.UndefOr[stdLib.Uint8Array | scala.Null] = js.undefined
         /** PubsubMessage messageId */
         var messageId: js.UndefOr[java.lang.String | scala.Null] = js.undefined
+        /** PubsubMessage orderingKey */
+        var orderingKey: js.UndefOr[java.lang.String | scala.Null] = js.undefined
         /** PubsubMessage publishTime */
         var publishTime: js.UndefOr[
                 atGoogleDashCloudPubsubLib.buildProtoPubsubMod.googleNs.protobufNs.ITimestamp | scala.Null
@@ -4610,6 +4612,8 @@ object googleNs extends js.Object {
       trait ISubscription extends js.Object {
         /** Subscription ackDeadlineSeconds */
         var ackDeadlineSeconds: js.UndefOr[scala.Double | scala.Null] = js.undefined
+        /** Subscription enableMessageOrdering */
+        var enableMessageOrdering: js.UndefOr[scala.Boolean | scala.Null] = js.undefined
         /** Subscription expirationPolicy */
         var expirationPolicy: js.UndefOr[IExpirationPolicy | scala.Null] = js.undefined
         /** Subscription labels */
@@ -5144,6 +5148,9 @@ object googleNs extends js.Object {
         /** PubsubMessage messageId. */
         @JSName("messageId")
         var messageId_PubsubMessage: java.lang.String = js.native
+        /** PubsubMessage orderingKey. */
+        @JSName("orderingKey")
+        var orderingKey_PubsubMessage: java.lang.String = js.native
         /**
           * Converts this PubsubMessage to JSON.
           * @returns JSON object
@@ -5612,6 +5619,9 @@ object googleNs extends js.Object {
         /** Subscription ackDeadlineSeconds. */
         @JSName("ackDeadlineSeconds")
         var ackDeadlineSeconds_Subscription: scala.Double = js.native
+        /** Subscription enableMessageOrdering. */
+        @JSName("enableMessageOrdering")
+        var enableMessageOrdering_Subscription: scala.Boolean = js.native
         /** Subscription labels. */
         @JSName("labels")
         var labels_Subscription: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native

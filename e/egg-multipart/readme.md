@@ -10,9 +10,9 @@ multipart plugin for egg
 | ------------------ | :-------------: |
 | Full name          | egg-multipart |
 | Keywords           | egg, egg-plugin, eggPlugin, multipart |
-| # releases         | 13 |
+| # releases         | 11 |
 | # dependents       | 5 |
-| # downloads        | 257351 |
+| # downloads        | 236057 |
 | # stars            | 2 |
 
 ## Links

@@ -34,5 +34,8 @@ package object libTypesMod {
     popmotionLib.popmotionMod.Action | popmotionDashPoseLib.popmotionDashPoseLibNumbers.`false`
   ]
   type TransitionDefinition = TweenDefinition | PhysicsDefinition | SpringDefinition | DecayDefinition | KeyframesDefinition
-  type TweenDefinition = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Merge<{  type  :'tween'} & TransitionDefinitionCommonProps & TweenProps, {  ease  :TweenProps['ease'] | keyof typeof easingLookup | CubicBezierArgs}> */ js.Any
+  type TweenDefinition = tsDashEssentialsLib.tsDashEssentialsMod.Merge[
+    popmotionDashPoseLib.Anon_Tween with TransitionDefinitionCommonProps with popmotionLib.libAnimationsTweenTypesMod.TweenProps, 
+    popmotionDashPoseLib.Anon_Ease
+  ]
 }

@@ -20,10 +20,26 @@ which will be available online shortly after.
 
 ## About
 
-This is the home of Scala.js typings for **7031** Javascript libraries,
+This is the home of Scala.js typings for **7061** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
-This should make it one of the biggest Scala repos on the planet with millions of lines of code
+This should make it one of the biggest Scala repos on the planet:
+```
+
+--------------------------------------------------------------------------------
+ Language             Files        Lines        Blank      Comment         Code
+--------------------------------------------------------------------------------
+ Scala               220920     10965413       954268      2630358      7380787
+ Markdown              7156       335628        97799            0       237829
+ JSON                     6           41            0            0           41
+ Makefile                 2           35            7            0           28
+ HTML                     1            6            0            0            6
+--------------------------------------------------------------------------------
+ Total               228085     11301123      1052074      2630358      7618691
+--------------------------------------------------------------------------------
+
+```
+
 
 ## Typing?
 
@@ -86,7 +102,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201906160530")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201906181247")
 ```
 
 ### `build.sbt`
@@ -122,8 +138,6 @@ For now we just have the following facades:
 - [std](facades/std)
 - [react](facades/react)
 - [react-redux](facades/react-redux)
-- [react-slinky](facades/react-slinky)
-- [react-japgolly](facades/react-japgolly)
 
 These libraries can depend both on typings and external libraries, and
  will be versioned and published alongside ScalablyTyped typings.

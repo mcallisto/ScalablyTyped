@@ -12,7 +12,7 @@ class ImageViewer protected ()
   /**
     * Construct a new image widget.
     */
-  def this(context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.Context) = this()
+  def this(context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any) = this()
   var _colorinversion: js.Any = js.native
   var _format: js.Any = js.native
   var _img: js.Any = js.native
@@ -39,7 +39,7 @@ class ImageViewer protected ()
   /**
     * The image widget's context.
     */
-  val context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.Context = js.native
+  val context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any = js.native
   /**
     * A promise that resolves when the image viewer is ready.
     */

@@ -10,9 +10,9 @@ HTML entity utilities for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/html-entities |
 | Keywords           | wordpress, html, entities |
-| # releases         | 12 |
+| # releases         | 13 |
 | # dependents       | 6 |
-| # downloads        | 64606 |
+| # downloads        | 66736 |
 | # stars            | 0 |
 
 ## Links

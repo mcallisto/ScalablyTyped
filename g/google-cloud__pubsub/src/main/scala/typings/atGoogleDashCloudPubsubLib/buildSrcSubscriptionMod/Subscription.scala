@@ -36,7 +36,7 @@ class Subscription protected ()
   val projectId: java.lang.String = js.native
   var pubsub: atGoogleDashCloudPubsubLib.buildSrcPubsubMod.PubSub = js.native
   @JSName("request")
-  var request_Original: atGoogleDashCloudPubsubLib.Anon_Callback = js.native
+  var request_Original: atGoogleDashCloudPubsubLib.Fn_Callback = js.native
   var topic: js.UndefOr[atGoogleDashCloudPubsubLib.buildSrcTopicMod.Topic | java.lang.String] = js.native
   def close(): js.Promise[scala.Unit] = js.native
   def close(callback: SubscriptionCloseCallback): scala.Unit = js.native
@@ -49,17 +49,22 @@ class Subscription protected ()
     name: java.lang.String,
     callback: atGoogleDashCloudPubsubLib.buildSrcSnapshotMod.CreateSnapshotCallback
   ): scala.Unit = js.native
-  def createSnapshot(name: java.lang.String, gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions): js.Promise[atGoogleDashCloudPubsubLib.buildSrcSnapshotMod.CreateSnapshotResponse] = js.native
   def createSnapshot(
     name: java.lang.String,
-    gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions,
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any
+  ): js.Promise[atGoogleDashCloudPubsubLib.buildSrcSnapshotMod.CreateSnapshotResponse] = js.native
+  def createSnapshot(
+    name: java.lang.String,
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any,
     callback: atGoogleDashCloudPubsubLib.buildSrcSnapshotMod.CreateSnapshotCallback
   ): scala.Unit = js.native
   def delete(): js.Promise[atGoogleDashCloudPubsubLib.buildSrcPubsubMod.EmptyResponse] = js.native
   def delete(callback: atGoogleDashCloudPubsubLib.buildSrcPubsubMod.EmptyCallback): scala.Unit = js.native
-  def delete(gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions): js.Promise[atGoogleDashCloudPubsubLib.buildSrcPubsubMod.EmptyResponse] = js.native
   def delete(
-    gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions,
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any
+  ): js.Promise[atGoogleDashCloudPubsubLib.buildSrcPubsubMod.EmptyResponse] = js.native
+  def delete(
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any,
     callback: atGoogleDashCloudPubsubLib.buildSrcPubsubMod.EmptyCallback
   ): scala.Unit = js.native
   def exists(): js.Promise[atGoogleDashCloudPubsubLib.buildSrcPubsubMod.ExistsResponse] = js.native
@@ -70,14 +75,22 @@ class Subscription protected ()
   def get(gaxOpts: GetSubscriptionOptions, callback: GetSubscriptionCallback): scala.Unit = js.native
   def getMetadata(): js.Promise[GetSubscriptionMetadataResponse] = js.native
   def getMetadata(callback: GetSubscriptionMetadataCallback): scala.Unit = js.native
-  def getMetadata(gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions): js.Promise[GetSubscriptionMetadataResponse] = js.native
-  def getMetadata(gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions, callback: GetSubscriptionMetadataCallback): scala.Unit = js.native
+  def getMetadata(
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any
+  ): js.Promise[GetSubscriptionMetadataResponse] = js.native
+  def getMetadata(
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any,
+    callback: GetSubscriptionMetadataCallback
+  ): scala.Unit = js.native
   def modifyPushConfig(config: PushConfig): js.Promise[atGoogleDashCloudPubsubLib.buildSrcPubsubMod.EmptyResponse] = js.native
   def modifyPushConfig(config: PushConfig, callback: atGoogleDashCloudPubsubLib.buildSrcPubsubMod.EmptyCallback): scala.Unit = js.native
-  def modifyPushConfig(config: PushConfig, gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions): js.Promise[atGoogleDashCloudPubsubLib.buildSrcPubsubMod.EmptyResponse] = js.native
   def modifyPushConfig(
     config: PushConfig,
-    gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions,
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any
+  ): js.Promise[atGoogleDashCloudPubsubLib.buildSrcPubsubMod.EmptyResponse] = js.native
+  def modifyPushConfig(
+    config: PushConfig,
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any,
     callback: atGoogleDashCloudPubsubLib.buildSrcPubsubMod.EmptyCallback
   ): scala.Unit = js.native
   /**
@@ -108,26 +121,35 @@ class Subscription protected ()
   ): scala.Unit = js.native
   def seek(snapshot: java.lang.String): js.Promise[atGoogleDashCloudPubsubLib.buildSrcSnapshotMod.SeekResponse] = js.native
   def seek(snapshot: java.lang.String, callback: atGoogleDashCloudPubsubLib.buildSrcSnapshotMod.SeekCallback): scala.Unit = js.native
-  def seek(snapshot: java.lang.String, gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions): js.Promise[atGoogleDashCloudPubsubLib.buildSrcSnapshotMod.SeekResponse] = js.native
   def seek(
     snapshot: java.lang.String,
-    gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions,
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any
+  ): js.Promise[atGoogleDashCloudPubsubLib.buildSrcSnapshotMod.SeekResponse] = js.native
+  def seek(
+    snapshot: java.lang.String,
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any,
     callback: atGoogleDashCloudPubsubLib.buildSrcSnapshotMod.SeekCallback
   ): scala.Unit = js.native
   def seek(snapshot: stdLib.Date): js.Promise[atGoogleDashCloudPubsubLib.buildSrcSnapshotMod.SeekResponse] = js.native
   def seek(snapshot: stdLib.Date, callback: atGoogleDashCloudPubsubLib.buildSrcSnapshotMod.SeekCallback): scala.Unit = js.native
-  def seek(snapshot: stdLib.Date, gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions): js.Promise[atGoogleDashCloudPubsubLib.buildSrcSnapshotMod.SeekResponse] = js.native
   def seek(
     snapshot: stdLib.Date,
-    gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions,
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any
+  ): js.Promise[atGoogleDashCloudPubsubLib.buildSrcSnapshotMod.SeekResponse] = js.native
+  def seek(
+    snapshot: stdLib.Date,
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any,
     callback: atGoogleDashCloudPubsubLib.buildSrcSnapshotMod.SeekCallback
   ): scala.Unit = js.native
   def setMetadata(metadata: SubscriptionMetadata): js.Promise[SetSubscriptionMetadataResponse] = js.native
   def setMetadata(metadata: SubscriptionMetadata, callback: SetSubscriptionMetadataCallback): scala.Unit = js.native
-  def setMetadata(metadata: SubscriptionMetadata, gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions): js.Promise[SetSubscriptionMetadataResponse] = js.native
   def setMetadata(
     metadata: SubscriptionMetadata,
-    gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions,
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any
+  ): js.Promise[SetSubscriptionMetadataResponse] = js.native
+  def setMetadata(
+    metadata: SubscriptionMetadata,
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any,
     callback: SetSubscriptionMetadataCallback
   ): scala.Unit = js.native
   /**

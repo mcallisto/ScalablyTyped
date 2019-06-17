@@ -9,10 +9,10 @@ A minimalistic routing for React. Nothing extra, just HOOKS.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | wouter |
-| Keywords           | react, router, tiny, routing, hooks |
-| # releases         | 4 |
+| Keywords           | react, preact, router, tiny, routing, hooks |
+| # releases         | 10 |
 | # dependents       | 0 |
-| # downloads        | 474 |
+| # downloads        | 1205 |
 | # stars            | 0 |
 
 ## Links

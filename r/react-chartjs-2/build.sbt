@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "react-chartjs-2"
-version := "2.7.6-efc43f"
-scalaVersion := "2.12.8"
+version := "2.7.6-4d1aa7"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "chart_dot_js" % "2.7-dt-20190528Z-beef13",
-  "org.scalablytyped" %%% "csstype" % "2.6.5-3bfbc5",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-4b3bf2",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-62c565",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "chart_dot_js" % "2.7-dt-20190617Z-1ce86c",
+  "org.scalablytyped" %%% "csstype" % "2.6.5-da6515",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-9043ed",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-007242",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

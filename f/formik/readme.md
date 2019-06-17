@@ -10,9 +10,9 @@ Forms in React, without tears
 | ------------------ | :-------------: |
 | Full name          | formik |
 | Keywords           | formik, react, react-dom, form, validation, forms, higher order component, hoc |
-| # releases         | 126 |
-| # dependents       | 169 |
-| # downloads        | 7785169 |
+| # releases         | 124 |
+| # dependents       | 146 |
+| # downloads        | 6822357 |
 | # stars            | 21 |
 
 ## Links

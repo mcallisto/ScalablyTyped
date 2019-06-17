@@ -5,15 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IOptionsOptionalContent[T /* <: atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget */, U /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IModel */ js.Any */]
+trait IOptionsOptionalContent[T /* <: atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget */, U /* <: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel */]
   extends atJupyterlabApputilsLib.libMainareawidgetMod.MainAreaWidgetNs.IOptionsOptionalContent[T] {
-  var context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IContext<U> */ js.Any
+  var context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IContext[U]
 }
 
 object IOptionsOptionalContent {
   @scala.inline
-  def apply[T /* <: atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget */, U /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IModel */ js.Any */](
-    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IContext<U> */ js.Any,
+  def apply[T /* <: atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget */, U /* <: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel */](
+    context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IContext[U],
     content: T = null,
     node: stdLib.HTMLElement = null,
     reveal: js.Promise[_] = null,

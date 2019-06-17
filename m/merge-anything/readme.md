@@ -1,7 +1,7 @@
 
 # Scala.js typings for merge-anything
 
-Typings are for version 2.2.4
+Typings are for version 2.2.5
 
 ## Library description:
 Merge objects & other types recursively. A simple & small integration.
@@ -10,9 +10,9 @@ Merge objects & other types recursively. A simple & small integration.
 | ------------------ | :-------------: |
 | Full name          | merge-anything |
 | Keywords           | javascript, merge, deepmerge, recursively, object-assign, deep-assign, nested-assign, typescript, deep-merge, merge-object, merge-objects, deep-merge-object, object-assign-deep, nested-object-assign, nested-merge, combine, combine-objects, combine-merge, merge-combine, nested-combine |
-| # releases         | 14 |
-| # dependents       | 2 |
-| # downloads        | 14850 |
+| # releases         | 13 |
+| # dependents       | 3 |
+| # downloads        | 43170 |
 | # stars            | 0 |
 
 ## Links

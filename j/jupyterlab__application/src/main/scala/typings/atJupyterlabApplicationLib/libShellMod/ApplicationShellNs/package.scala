@@ -17,5 +17,5 @@ package object ApplicationShellNs {
   /**
     * The options for adding a widget to a side area of the shell.
     */
-  type IMainAreaOptions = atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IOpenOptions
+  type IMainAreaOptions = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IOpenOptions */ js.Any
 }

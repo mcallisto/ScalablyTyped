@@ -5,13 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@jupyterlab/fileeditor/lib/widget", "FileEditorFactory")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped any */ @JSImport("@jupyterlab/fileeditor/lib/widget", "FileEditorFactory")
 @js.native
-class FileEditorFactory protected ()
-  extends atJupyterlabDocregistryLib.atJupyterlabDocregistryMod.ABCWidgetFactory[
-      atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[FileEditor, atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel], 
-      atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.ICodeModel
-    ] {
+class FileEditorFactory protected () extends js.Object {
   /**
     * Construct a new editor widget factory.
     */
@@ -20,6 +17,8 @@ class FileEditorFactory protected ()
   /**
     * Create a new widget given a context.
     */
-  /* protected */ def createNewWidget(context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.CodeContext): atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[FileEditor, atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel] = js.native
+  /* protected */ def createNewWidget(
+    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.CodeContext */ js.Any
+  ): js.Any = js.native
 }
 

@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "knex-postgis"
-version := "0.2-dt-20190314Z-a2b415"
-scalaVersion := "2.12.8"
+version := "0.2-dt-20190314Z-61636b"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-cca586",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-762b1c",
-  "org.scalablytyped" %%% "knex" % "0.17.6-de5228",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-135f46",
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-3dd886",
+  "org.scalablytyped" %%% "knex" % "0.17.6-42c120",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-79c22c",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

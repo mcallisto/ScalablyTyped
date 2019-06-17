@@ -23,7 +23,9 @@ package object buildSrcPubsubMod {
   ]
   type GetClientCallback = js.Function2[
     /* err */ stdLib.Error | scala.Null, 
-    /* gaxClient */ js.UndefOr[googleDashGaxLib.googleDashGaxMod.ClientStub], 
+    /* gaxClient */ js.UndefOr[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify gax.ClientStub */ js.Any
+    ], 
     scala.Unit
   ]
   type GetSnapshotsCallback = RequestCallback[

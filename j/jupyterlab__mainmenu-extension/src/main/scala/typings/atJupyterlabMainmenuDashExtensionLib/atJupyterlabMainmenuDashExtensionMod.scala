@@ -11,33 +11,33 @@ object atJupyterlabMainmenuDashExtensionMod extends js.Object {
   /**
     * A service providing an interface to the main menu.
     */
-  val default: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLabPlugin[atJupyterlabMainmenuLib.libMainmenuMod.IMainMenu] = js.native
+  val default: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLabPlugin<IMainMenu> */ js.Any = js.native
   def createEditMenu(
-    app: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLab,
+    app: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLab */ js.Any,
     menu: atJupyterlabMainmenuLib.atJupyterlabMainmenuMod.EditMenu
   ): scala.Unit = js.native
   def createFileMenu(
-    app: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLab,
+    app: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLab */ js.Any,
     menu: atJupyterlabMainmenuLib.atJupyterlabMainmenuMod.FileMenu
   ): scala.Unit = js.native
   def createKernelMenu(
-    app: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLab,
+    app: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLab */ js.Any,
     menu: atJupyterlabMainmenuLib.atJupyterlabMainmenuMod.KernelMenu
   ): scala.Unit = js.native
   def createRunMenu(
-    app: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLab,
+    app: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLab */ js.Any,
     menu: atJupyterlabMainmenuLib.atJupyterlabMainmenuMod.RunMenu
   ): scala.Unit = js.native
   def createSettingsMenu(
-    app: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLab,
+    app: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLab */ js.Any,
     menu: atJupyterlabMainmenuLib.atJupyterlabMainmenuMod.SettingsMenu
   ): scala.Unit = js.native
   def createTabsMenu(
-    app: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLab,
+    app: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLab */ js.Any,
     menu: atJupyterlabMainmenuLib.atJupyterlabMainmenuMod.TabsMenu
   ): scala.Unit = js.native
   def createViewMenu(
-    app: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLab,
+    app: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLab */ js.Any,
     menu: atJupyterlabMainmenuLib.atJupyterlabMainmenuMod.ViewMenu
   ): scala.Unit = js.native
   @JSName("CommandIDs")

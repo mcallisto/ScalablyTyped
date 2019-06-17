@@ -25,7 +25,7 @@ class CSVViewer protected ()
   /**
     * The CSV widget's context.
     */
-  val context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.Context = js.native
+  val context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any = js.native
   /**
     * The delimiter for the file.
     */

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class EpicNotes protected ()
   extends gitlabLib.distServicesMod.EpicNotes {
-  def this(options: gitlabLib.BaseServiceOptions) = this()
+  def this(options: gitlabLib.distInfrastructureMod.BaseServiceOptions) = this()
 }
 

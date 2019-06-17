@@ -12,7 +12,7 @@ Extends Chai with lint-friendly terminating assertions.
 | Keywords           | chai, chai-plugin, browser, testing |
 | # releases         | 3 |
 | # dependents       | 37 |
-| # downloads        | 1863030 |
+| # downloads        | 1895280 |
 | # stars            | 3 |
 
 ## Links

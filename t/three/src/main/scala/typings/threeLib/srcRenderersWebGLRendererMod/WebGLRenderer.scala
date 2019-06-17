@@ -123,6 +123,14 @@ class WebGLRenderer () extends Renderer {
   def enableScissorTest(boolean: js.Any): js.Any = js.native
   def forceContextLoss(): scala.Unit = js.native
   /**
+  	 * Returns the current active cube face.
+  	 */
+  def getActiveCubeFace(): scala.Double = js.native
+  /**
+  	 * Returns the current active mipmap level.
+  	 */
+  def getActiveMipMapLevel(): scala.Double = js.native
+  /**
     * Returns a float with the current clear alpha. Ranges from 0 to 1.
     */
   def getClearAlpha(): scala.Double = js.native
@@ -174,6 +182,15 @@ class WebGLRenderer () extends Renderer {
     width: scala.Double,
     height: scala.Double,
     buffer: js.Any
+  ): scala.Unit = js.native
+  def readRenderTargetPixels(
+    renderTarget: threeLib.srcRenderersWebglWebGLRenderListsMod.RenderTarget,
+    x: scala.Double,
+    y: scala.Double,
+    width: scala.Double,
+    height: scala.Double,
+    buffer: js.Any,
+    activeCubeFaceIndex: scala.Double
   ): scala.Unit = js.native
   def renderBufferDirect(
     camera: threeLib.srcCamerasCameraMod.Camera,

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "globalize-compiler"
-version := "v0.2.0-dt-20190322Z-3c51a7"
-scalaVersion := "2.12.8"
+version := "v0.2.0-dt-20190322Z-ad6526"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "cldrjs" % "0.4.4-dt-20190322Z-2b613e",
-  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-e82a53",
-  "org.scalablytyped" %%% "globalize" % "0.0-unknown-dt-20190322Z-92dcc1",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "cldrjs" % "0.4.4-dt-20190322Z-9c21f8",
+  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-69283f",
+  "org.scalablytyped" %%% "globalize" % "0.0-unknown-dt-20190322Z-9a1dc3",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

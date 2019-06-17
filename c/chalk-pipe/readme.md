@@ -11,8 +11,8 @@ Apply a color scheme in a style pipe
 | Full name          | chalk-pipe |
 | Keywords           | - |
 | # releases         | 7 |
-| # dependents       | 25 |
-| # downloads        | 96333 |
+| # dependents       | 27 |
+| # downloads        | 110014 |
 | # stars            | 0 |
 
 ## Links

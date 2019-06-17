@@ -1,0 +1,13 @@
+[debug] PhaseRunner.scala:84 Success [id => nwmatcher, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/nwmatcher/index.d.ts),FromFolder(InFolder(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/nwmatcher),TsIdentLibrarySimple(nwmatcher)),TsIdentModule(None,List(nwmatcher))) [id => nwmatcher, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(nwmatcher)) [id => nwmatcher, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(nwmatcher) [id => nwmatcher, phase => typescript] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Document) [id => nwmatcher, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(nwmatcher) / TsDeclFunction(^) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[debug] PhaseRunner.scala:84 Success [id => nwmatcher, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:42 Processing nwmatcher [id => nwmatcher, phase => scala.js] 
+[debug] PhaseRunner.scala:84 Success [id => nwmatcher, phase => scala.js] 
+[warn ] Phase3Compile.scala:206 Building nwmatcher... [id => nwmatcher, phase => build] 
+[error] Phase3Compile.scala:225 [E] Unexpected error when compiling nwmatcher: 'key not found: object Global'
+[E] Failed to compile 'nwmatcher'
+ [id => nwmatcher, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [nwmatcher => Compilation failed] [id => nwmatcher, phase => build] 

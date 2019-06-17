@@ -47,7 +47,9 @@ object ToolbarItemsNs extends js.Object {
   /**
     * Get the default toolbar items for panel
     */
-  def getDefaultItems(panel: atJupyterlabNotebookLib.libPanelMod.NotebookPanel): js.Array[atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IToolbarItem] = js.native
+  def getDefaultItems(panel: atJupyterlabNotebookLib.libPanelMod.NotebookPanel): js.Array[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IToolbarItem */ _
+  ] = js.native
   /**
     * Add the default items to the panel toolbar.
     */

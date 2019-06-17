@@ -12,7 +12,7 @@ A utility to wrap many copies of a single Redux reducer into a single key-based 
 | Keywords           | react, reactjs, flux, redux, react-redux, multireducer, decorator |
 | # releases         | 3 |
 | # dependents       | 17 |
-| # downloads        | 170702 |
+| # downloads        | 177370 |
 | # stars            | 3 |
 
 ## Links

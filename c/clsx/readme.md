@@ -11,8 +11,8 @@ A tiny (223B) utility for constructing className strings conditionally.
 | Full name          | clsx |
 | Keywords           | classes, classname, classnames |
 | # releases         | 8 |
-| # dependents       | 29 |
-| # downloads        | 706808 |
+| # dependents       | 42 |
+| # downloads        | 1261432 |
 | # stars            | 0 |
 
 ## Links

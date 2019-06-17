@@ -17,8 +17,8 @@ class Frustum protected () extends js.Object {
   def copy(frustum: Frustum): this.type = js.native
   def intersectsBox(box: threeLib.srcMathBox3Mod.Box3): scala.Boolean = js.native
   def intersectsObject(`object`: threeLib.srcCoreObject3DMod.Object3D): scala.Boolean = js.native
-  def intersectsObject(sprite: threeLib.srcObjectsSpriteMod.Sprite): scala.Boolean = js.native
   def intersectsSphere(sphere: threeLib.srcMathSphereMod.Sphere): scala.Boolean = js.native
+  def intersectsSprite(sprite: threeLib.srcObjectsSpriteMod.Sprite): scala.Boolean = js.native
   def set(
     p0: js.UndefOr[scala.Double],
     p1: js.UndefOr[scala.Double],

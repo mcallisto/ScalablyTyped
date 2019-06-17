@@ -10,9 +10,9 @@ The mobile-friendly, responsive, and lightweight jQuery date & time input picker
 | ------------------ | :-------------: |
 | Full name          | pickadate |
 | Keywords           | date, time, picker, input, responsive |
-| # releases         | 10 |
-| # dependents       | 14 |
-| # downloads        | 380483 |
+| # releases         | 8 |
+| # dependents       | 15 |
+| # downloads        | 384061 |
 | # stars            | 5 |
 
 ## Links

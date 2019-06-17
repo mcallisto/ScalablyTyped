@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "knockout_dot_rx"
-version := "1.0-dt-20190322Z-2bcd67"
-scalaVersion := "2.12.8"
+version := "1.0-dt-20190322Z-4f0f4f"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190515Z-601f59",
-  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20190322Z-15bd27",
-  "org.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20190322Z-a1f3ca",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190515Z-246100",
+  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20190322Z-4ab25a",
+  "org.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20190322Z-5355bd",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

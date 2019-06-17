@@ -1,35 +1,35 @@
 organization := "org.scalablytyped"
 name := "poi"
-version := "12.5-dt-20190414Z-406165"
-scalaVersion := "2.12.8"
+version := "12.5-dt-20190414Z-4549b8"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-375ab8",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-f89d38",
-  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190130Z-0a76b7",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-07b727",
-  "org.scalablytyped" %%% "connect-history-api-fallback" % "1.3-dt-20190326Z-224832",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-47e6a1",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190606Z-ae49a5",
-  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190212Z-e8183b",
-  "org.scalablytyped" %%% "html-webpack-plugin" % "3.2-dt-20181121Z-f5c502",
-  "org.scalablytyped" %%% "http-proxy" % "1.17-dt-20190301Z-3d0d70",
-  "org.scalablytyped" %%% "http-proxy-middleware" % "0.19-dt-20190114Z-74cb57",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-51fe5c",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-39a594",
-  "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20190322Z-3d98de",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-c829e9",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-b05be9",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119",
-  "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-f9cdac",
-  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-e377d2",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190521Z-9a1e13",
-  "org.scalablytyped" %%% "webpack-chain" % "6.0.0-e6f28f",
-  "org.scalablytyped" %%% "webpack-dev-server" % "3.1-dt-20190524Z-94cc1a")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-1d552d",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-cba36d",
+  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190130Z-2eed31",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-9415de",
+  "org.scalablytyped" %%% "connect-history-api-fallback" % "1.3-dt-20190326Z-23cf22",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-5e6a51",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190606Z-620cbf",
+  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190212Z-b13b37",
+  "org.scalablytyped" %%% "html-webpack-plugin" % "3.2-dt-20181121Z-4a50c9",
+  "org.scalablytyped" %%% "http-proxy" % "1.17-dt-20190301Z-30fa6d",
+  "org.scalablytyped" %%% "http-proxy-middleware" % "0.19-dt-20190114Z-4e2217",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-a73fa9",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-79c22c",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-5a14c3",
+  "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20190322Z-29e8de",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-1dd6a1",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-62bc9f",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7",
+  "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-1535cb",
+  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-267d49",
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190521Z-bf298e",
+  "org.scalablytyped" %%% "webpack-chain" % "6.0.0-6e442f",
+  "org.scalablytyped" %%% "webpack-dev-server" % "3.1-dt-20190524Z-230fe0")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

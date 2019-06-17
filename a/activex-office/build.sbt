@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "activex-office"
-version := "16.0-dt-20190213Z-10dba5"
-scalaVersion := "2.12.8"
+version := "16.0-dt-20190213Z-566cc3"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "activex-outlook" % "14.0-dt-20190213Z-ded4b8",
-  "org.scalablytyped" %%% "activex-stdole" % "2.0-dt-20190213Z-5144ec",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "activex-outlook" % "14.0-dt-20190213Z-b39282",
+  "org.scalablytyped" %%% "activex-stdole" % "2.0-dt-20190213Z-eb637a",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

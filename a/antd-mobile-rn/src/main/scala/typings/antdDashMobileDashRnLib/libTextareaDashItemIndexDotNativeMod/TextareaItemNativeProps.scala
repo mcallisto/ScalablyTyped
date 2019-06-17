@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof any, 'onChange' | 'onFocus' | 'onBlur'> ]: any[P]} */ trait TextareaItemNativeProps
+- Dropped any extends any ? std.Pick<any, utility-types.utility-types/dist/mapped-types.SetComplement<keyof any, 'onChange' | 'onFocus' | 'onBlur'>> : never */ trait TextareaItemNativeProps
   extends antdDashMobileDashRnLib.libTextareaDashItemPropsTypeMod.TextAreaItemPropsType {
   var last: js.UndefOr[scala.Boolean] = js.undefined
   var onContentSizeChange: js.UndefOr[js.Function1[/* e */ js.Any, scala.Unit]] = js.undefined

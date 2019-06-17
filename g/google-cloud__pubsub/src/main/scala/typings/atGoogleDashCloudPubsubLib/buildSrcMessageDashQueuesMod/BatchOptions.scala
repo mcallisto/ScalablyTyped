@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BatchOptions extends js.Object {
-  var callOptions: js.UndefOr[googleDashGaxLib.buildSrcGaxMod.CallOptions] = js.undefined
+  var callOptions: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any
+  ] = js.undefined
   var maxMessages: js.UndefOr[scala.Double] = js.undefined
   var maxMilliseconds: js.UndefOr[scala.Double] = js.undefined
 }
@@ -14,7 +16,7 @@ trait BatchOptions extends js.Object {
 object BatchOptions {
   @scala.inline
   def apply(
-    callOptions: googleDashGaxLib.buildSrcGaxMod.CallOptions = null,
+    callOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any = null,
     maxMessages: scala.Int | scala.Double = null,
     maxMilliseconds: scala.Int | scala.Double = null
   ): BatchOptions = {

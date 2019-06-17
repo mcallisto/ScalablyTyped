@@ -5,14 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("@jupyterlab/docregistry/lib/default", "ABCWidgetFactory")
+@JSImport("@jupyterlab/docregistry/lib/default", "ABCWidgetFactory")
 @js.native
-abstract class ABCWidgetFactory[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any */, U /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IModel */ js.Any */] protected () extends js.Object {
+abstract class ABCWidgetFactory[T /* <: atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
+atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget, 
+atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel] */, U /* <: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel */] protected ()
+  extends atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IWidgetFactory[T, U] {
   /**
     * Construct a new `ABCWidgetFactory`.
     */
-  def this(options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IWidgetFactoryOptions<T> */ js.Any) = this()
+  def this(options: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IWidgetFactoryOptions[T]) = this()
   var _canStartKernel: js.Any = js.native
   var _defaultFor: js.Any = js.native
   var _defaultRendered: js.Any = js.native
@@ -27,71 +29,88 @@ abstract class ABCWidgetFactory[T /* <: /* import warning: QualifyReferences.res
   /**
     * Whether the widgets can start a kernel when opened.
     */
-  val canStartKernel: scala.Boolean = js.native
+  @JSName("canStartKernel")
+  val canStartKernel_ABCWidgetFactory: scala.Boolean = js.native
   /**
     * The file types for which the factory should be the default.
     */
-  val defaultFor: js.Array[java.lang.String] = js.native
+  @JSName("defaultFor")
+  val defaultFor_ABCWidgetFactory: js.Array[java.lang.String] = js.native
   /**
     * The file types for which the factory should be the default for
     * rendering a document model, if different from editing.
     */
-  val defaultRendered: js.Array[java.lang.String] = js.native
+  @JSName("defaultRendered")
+  val defaultRendered_ABCWidgetFactory: js.Array[java.lang.String] = js.native
   /**
     * The file types the widget can view.
     */
-  val fileTypes: js.Array[java.lang.String] = js.native
+  /* CompleteClass */
+  override val fileTypes: js.Array[java.lang.String] = js.native
   /**
-    * Get whether the model factory has been disposed.
+    * Test whether the object has been disposed.
+    *
+    * #### Notes
+    * This property is always safe to access.
     */
-  val isDisposed: scala.Boolean = js.native
+  /* CompleteClass */
+  override val isDisposed: scala.Boolean = js.native
   /**
     * The registered name of the model type used to create the widgets.
     */
-  val modelName: java.lang.String = js.native
+  @JSName("modelName")
+  val modelName_ABCWidgetFactory: java.lang.String = js.native
   /**
     * The name of the widget to display in dialogs.
     */
-  val name: java.lang.String = js.native
+  /* CompleteClass */
+  override val name: java.lang.String = js.native
   /**
     * Whether the widgets prefer having a kernel started.
     */
-  val preferKernel: scala.Boolean = js.native
+  @JSName("preferKernel")
+  val preferKernel_ABCWidgetFactory: scala.Boolean = js.native
   /**
     * Whether the widget factory is read only.
     */
-  val readOnly: scala.Boolean = js.native
+  @JSName("readOnly")
+  val readOnly_ABCWidgetFactory: scala.Boolean = js.native
   /**
-    * A signal emitted when a widget is created.
+    * A signal emitted when a new widget is created.
     */
-  val widgetCreated: atPhosphorSignalingLib.atPhosphorSignalingMod.ISignal[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IWidgetFactory<T, U> */ _, 
+  /* CompleteClass */
+  override var widgetCreated: atPhosphorSignalingLib.atPhosphorSignalingMod.ISignal[
+    atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IWidgetFactory[T, U], 
     T
   ] = js.native
   /**
-    * Create a new widget given a document model and a context.
+    * Create a new widget given a context.
     *
     * #### Notes
     * It should emit the [widgetCreated] signal with the new widget.
     */
-  def createNew(
-    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IContext<U> */ js.Any
-  ): T = js.native
+  /* CompleteClass */
+  override def createNew(context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IContext[U]): T = js.native
   /**
     * Create a widget for a context.
     */
-  /* protected */ def createNewWidget(
-    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IContext<U> */ js.Any
-  ): T = js.native
+  /* protected */ def createNewWidget(context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IContext[U]): T = js.native
   /**
     * Default factory for toolbar items to be added after the widget is created.
     */
-  /* protected */ def defaultToolbarFactory(widget: T): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IToolbarItem */ _
-  ] = js.native
+  /* protected */ def defaultToolbarFactory(widget: T): js.Array[atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IToolbarItem] = js.native
   /**
-    * Dispose of the resources held by the document manager.
+    * Dispose of the resources held by the object.
+    *
+    * #### Notes
+    * If the object's `dispose` method is called more than once, all
+    * calls made after the first will be a no-op.
+    *
+    * #### Undefined Behavior
+    * It is undefined behavior to use any functionality of the object
+    * after it has been disposed unless otherwise explicitly noted.
     */
-  def dispose(): scala.Unit = js.native
+  /* CompleteClass */
+  override def dispose(): scala.Unit = js.native
 }
 

@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_AdditionalParams extends js.Object {
-  def authRedirectGuard(): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavigationGuard */ _
-  ] = js.native
+  def authRedirectGuard(): js.Promise[vueDashRouterLib.typesRouterMod.NavigationGuard[vueLib.typesVueMod.Vue]] = js.native
   def getAccessToken(): js.Promise[java.lang.String] = js.native
   def getFromUri(): java.lang.String = js.native
   def getIdToken(): js.Promise[java.lang.String] = js.native

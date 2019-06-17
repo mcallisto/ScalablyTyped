@@ -12,7 +12,7 @@ btoa and atob (ie base64 encoding and decoding) support for node.js or old brows
 | Keywords           | btoa, encode, decode, atob, base64, unicode, 16-bit, 8-bit, homoglyphs |
 | # releases         | 14 |
 | # dependents       | 2 |
-| # downloads        | 49189 |
+| # downloads        | 54525 |
 | # stars            | 0 |
 
 ## Links

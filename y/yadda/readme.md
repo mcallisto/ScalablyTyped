@@ -12,7 +12,7 @@ A true BDD framework for JavaScript
 | Keywords           | BDD, Specification, Natural, Test, Behaviour, Driven, Jasmine, Mocha, QUnit, Nodeunit |
 | # releases         | 6 |
 | # dependents       | 33 |
-| # downloads        | 90732 |
+| # downloads        | 97988 |
 | # stars            | 8 |
 
 ## Links

@@ -1,0 +1,59 @@
+[debug] PhaseRunner.scala:84 Success [id => react-slinky-facade, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => react-slinky-facade, phase => scala.js] 
+[warn ] Phase3Compile.scala:206 Building react-slinky-facade... [id => react-slinky-facade, phase => build] 
+[error] Phase3Compile.scala:225 [E] [E13] src/main/scala/typings/reactLib/ScalableSlinky.scala:38:5
+[E]       not found: value KeyAndRefAddingStage
+[E]       L38:     KeyAndRefAddingStage.build(stage).asInstanceOf[ReactNode]
+[E]                ^
+[E] [E12] src/main/scala/typings/reactLib/ScalableSlinky.scala:37:60
+[E]       not found: type KeyAndRefAddingStage
+[E]       L37:   @inline implicit def buildKeyAndRefAddingStage[D](stage: KeyAndRefAddingStage[D]): ReactNode =
+[E]                                                                       ^
+[E] [E11] src/main/scala/typings/reactLib/ScalableSlinky.scala:35:5
+[E]       not found: value KeyAddingStage
+[E]       L35:     KeyAddingStage.build(stage).asInstanceOf[ReactNode]
+[E]                ^
+[E] [E10] src/main/scala/typings/reactLib/ScalableSlinky.scala:34:51
+[E]       not found: type KeyAddingStage
+[E]       L34:   @inline implicit def buildKeyAddingState(stage: KeyAddingStage): ReactNode =
+[E]                                                              ^
+[E] [E9] src/main/scala/typings/reactLib/ScalableSlinky.scala:32:5
+[E]      not found: value WithAttrs
+[E]      L32:     WithAttrs.build(withAttrs).asInstanceOf[ReactNode]
+[E]               ^
+[E] [E8] src/main/scala/typings/reactLib/ScalableSlinky.scala:31:53
+[E]      not found: type WithAttrs
+[E]      L31:   @inline implicit def buildWithAttrs[A](withAttrs: WithAttrs[A]): ReactNode =
+[E]                                                               ^
+[E] [E7] src/main/scala/typings/reactLib/ScalableSlinky.scala:29:5
+[E]      not found: value BuildingComponent
+[E]      L29:     BuildingComponent.make[E, R](comp).asInstanceOf[ReactNode]
+[E]               ^
+[E] [E6] src/main/scala/typings/reactLib/ScalableSlinky.scala:28:63
+[E]      not found: type BuildingComponent
+[E]      L28:   @inline implicit def buildExternal[E, R <: js.Object](comp: BuildingComponent[E, R]): ReactNode =
+[E]                                                                         ^
+[E] [E5] src/main/scala/typings/reactLib/ScalableSlinky.scala:24:11
+[E]      not found: type BuildingComponent
+[E]      L24:       new BuildingComponent(js.Array(ctor.asInstanceOf[js.Any], new js.Object))
+[E]                     ^
+[E] [E4] src/main/scala/typings/reactLib/ScalableSlinky.scala:23:26
+[E]      not found: type BuildingComponent
+[E]      L23:     @inline def noprops: BuildingComponent[Nothing, js.Object] =
+[E]                                    ^
+[E] [E3] src/main/scala/typings/reactLib/ScalableSlinky.scala:21:11
+[E]      not found: type BuildingComponent
+[E]      L21:       new BuildingComponent(js.Array(ctor.asInstanceOf[js.Any], props))
+[E]                     ^
+[E] [E2] src/main/scala/typings/reactLib/ScalableSlinky.scala:20:34
+[E]      not found: type BuildingComponent
+[E]      L20:     @inline def props(props: P): BuildingComponent[Nothing, js.Object] =
+[E]                                            ^
+[E] [E1] src/main/scala/typings/reactLib/ScalableSlinky.scala:4:8
+[E]      not found: object slinky
+[E]      L4: import slinky.core.{BuildingComponent, KeyAddingStage, KeyAndRefAddingStage, WithAttrs}
+[E]                 ^
+[E] src/main/scala/typings/reactLib/ScalableSlinky.scala: L4 [E1], L20 [E2], L21 [E3], L23 [E4], L24 [E5], L28 [E6], L29 [E7], L31 [E8], L32 [E9], L34 [E10], L35 [E11], L37 [E12], L38 [E13]
+[E] Failed to compile 'react-slinky-facade'
+ [id => react-slinky-facade, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [react-slinky-facade => Compilation failed] [id => react-slinky-facade, phase => build] 

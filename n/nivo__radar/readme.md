@@ -10,9 +10,9 @@ Typings are for version 0.58.0
 | ------------------ | :-------------: |
 | Full name          | @nivo/radar |
 | Keywords           | nivo, dataviz, react, d3, charts, radar-chart |
-| # releases         | 45 |
+| # releases         | 46 |
 | # dependents       | 2 |
-| # downloads        | 22328 |
+| # downloads        | 22247 |
 | # stars            | 0 |
 
 ## Links

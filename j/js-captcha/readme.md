@@ -12,7 +12,7 @@ Simple captcha component written in pure JavaScript with no dependencies based o
 | Keywords           | captcha, vanilla, simple, dependency-free, lightweight, javascript |
 | # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 389 |
+| # downloads        | 446 |
 | # stars            | 1 |
 
 ## Links

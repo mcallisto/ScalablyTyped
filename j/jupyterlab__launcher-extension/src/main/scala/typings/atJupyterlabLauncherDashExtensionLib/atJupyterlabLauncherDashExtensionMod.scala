@@ -11,6 +11,6 @@ object atJupyterlabLauncherDashExtensionMod extends js.Object {
   /**
     * A service providing an interface to the the launcher.
     */
-  val default: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLabPlugin[atJupyterlabLauncherLib.atJupyterlabLauncherMod.ILauncher] = js.native
+  val default: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLabPlugin<ILauncher> */ js.Any = js.native
 }
 

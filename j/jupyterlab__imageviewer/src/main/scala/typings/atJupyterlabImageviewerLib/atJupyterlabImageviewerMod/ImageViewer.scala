@@ -12,6 +12,6 @@ class ImageViewer protected ()
   /**
     * Construct a new image widget.
     */
-  def this(context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.Context) = this()
+  def this(context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any) = this()
 }
 

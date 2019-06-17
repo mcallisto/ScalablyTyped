@@ -16,7 +16,7 @@ object WindowsSignTaskConfiguration {
   def apply(
     hash: java.lang.String,
     isNest: scala.Boolean,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WindowsConfiguration */ js.Any,
+    options: appDashBuilderDashLibLib.outOptionsWinOptionsMod.WindowsConfiguration,
     path: java.lang.String,
     cscInfo: FileCodeSigningInfo | CertificateFromStoreInfo = null,
     name: java.lang.String = null,

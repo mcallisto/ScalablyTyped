@@ -10,9 +10,9 @@ WordPress internationalization (i18n) library.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/i18n |
 | Keywords           | wordpress, i18n |
-| # releases         | 15 |
-| # dependents       | 23 |
-| # downloads        | 154103 |
+| # releases         | 16 |
+| # dependents       | 24 |
+| # downloads        | 164337 |
 | # stars            | 0 |
 
 ## Links

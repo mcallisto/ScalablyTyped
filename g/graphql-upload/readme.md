@@ -10,9 +10,9 @@ Middleware and an Upload scalar to add support for GraphQL multipart requests (f
 | ------------------ | :-------------: |
 | Full name          | graphql-upload |
 | Keywords           | graphql, upload, file, multipart, server, koa, express, apollo, esm, mjs |
-| # releases         | 8 |
-| # dependents       | 20 |
-| # downloads        | 3439625 |
+| # releases         | 6 |
+| # dependents       | 18 |
+| # downloads        | 2649985 |
 | # stars            | 0 |
 
 ## Links

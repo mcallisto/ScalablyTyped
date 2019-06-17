@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait NsisOptions
+trait NsisOptions
   extends CommonNsisOptions
+     with appDashBuilderDashLibLib.outOptionsCommonWindowsInstallerConfigurationMod.CommonWindowsInstallerConfiguration
      with appDashBuilderDashLibLib.outCoreMod.TargetSpecificOptions {
   /**
     * *assisted installer only.* Allow requesting for elevation. If false, user will have to restart installer with elevated permissions.
@@ -79,26 +79,10 @@ import scala.scalajs.js.annotation._
     */
   val multiLanguageInstaller: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Whether to create one-click installer or assisted.
-    * @default true
-    */
-  val oneClick: js.UndefOr[scala.Boolean] = js.undefined
-  /**
     * Whether to pack the elevate executable (required for electron-updater if per-machine installer used or can be used in the future). Ignored if `perMachine` is set to `true`.
     * @default true
     */
   val packElevateHelper: js.UndefOr[scala.Boolean] = js.undefined
-  /**
-    * Whether to show install mode installer page (choice per-machine or per-user) for assisted installer. Or whether installation always per all users (per-machine).
-    *
-    * If `oneClick` is `true` (default): Whether to install per all users (per-machine).
-    *
-    * If `oneClick` is `false` and `perMachine` is `true`: no install mode installer page, always install per-machine.
-    *
-    * If `oneClick` is `false` and `perMachine` is `false` (default): install mode installer page.
-    * @default false
-    */
-  val perMachine: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * The file extension of files that will be not compressed. Applicable only for `extraResources` and `extraFiles` files.
     * @default [".avi", ".mov", ".m4v", ".mp4", ".m4p", ".qt", ".mkv", ".webm", ".vmdk"]
@@ -131,6 +115,8 @@ object NsisOptions {
     allowElevation: js.UndefOr[scala.Boolean] = js.undefined,
     allowToChangeInstallationDirectory: js.UndefOr[scala.Boolean] = js.undefined,
     artifactName: java.lang.String = null,
+    createDesktopShortcut: scala.Boolean | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.always = null,
+    createStartMenuShortcut: js.UndefOr[scala.Boolean] = js.undefined,
     deleteAppDataOnUninstall: js.UndefOr[scala.Boolean] = js.undefined,
     differentialPackage: js.UndefOr[scala.Boolean] = js.undefined,
     displayLanguageSelector: js.UndefOr[scala.Boolean] = js.undefined,
@@ -143,13 +129,16 @@ object NsisOptions {
     installerSidebar: java.lang.String = null,
     language: java.lang.String = null,
     license: java.lang.String = null,
+    menuCategory: scala.Boolean | java.lang.String = null,
     multiLanguageInstaller: js.UndefOr[scala.Boolean] = js.undefined,
     oneClick: js.UndefOr[scala.Boolean] = js.undefined,
     packElevateHelper: js.UndefOr[scala.Boolean] = js.undefined,
     perMachine: js.UndefOr[scala.Boolean] = js.undefined,
     preCompressedFileExtensions: js.Array[java.lang.String] | java.lang.String = null,
     publish: builderDashUtilDashRuntimeLib.outPublishOptionsMod.Publish = null,
+    runAfterFinish: js.UndefOr[scala.Boolean] = js.undefined,
     script: java.lang.String = null,
+    shortcutName: java.lang.String = null,
     unicode: js.UndefOr[scala.Boolean] = js.undefined,
     uninstallDisplayName: java.lang.String = null,
     uninstallerIcon: java.lang.String = null,
@@ -161,6 +150,8 @@ object NsisOptions {
     if (!js.isUndefined(allowElevation)) __obj.updateDynamic("allowElevation")(allowElevation)
     if (!js.isUndefined(allowToChangeInstallationDirectory)) __obj.updateDynamic("allowToChangeInstallationDirectory")(allowToChangeInstallationDirectory)
     if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName)
+    if (createDesktopShortcut != null) __obj.updateDynamic("createDesktopShortcut")(createDesktopShortcut.asInstanceOf[js.Any])
+    if (!js.isUndefined(createStartMenuShortcut)) __obj.updateDynamic("createStartMenuShortcut")(createStartMenuShortcut)
     if (!js.isUndefined(deleteAppDataOnUninstall)) __obj.updateDynamic("deleteAppDataOnUninstall")(deleteAppDataOnUninstall)
     if (!js.isUndefined(differentialPackage)) __obj.updateDynamic("differentialPackage")(differentialPackage)
     if (!js.isUndefined(displayLanguageSelector)) __obj.updateDynamic("displayLanguageSelector")(displayLanguageSelector)
@@ -173,13 +164,16 @@ object NsisOptions {
     if (installerSidebar != null) __obj.updateDynamic("installerSidebar")(installerSidebar)
     if (language != null) __obj.updateDynamic("language")(language)
     if (license != null) __obj.updateDynamic("license")(license)
+    if (menuCategory != null) __obj.updateDynamic("menuCategory")(menuCategory.asInstanceOf[js.Any])
     if (!js.isUndefined(multiLanguageInstaller)) __obj.updateDynamic("multiLanguageInstaller")(multiLanguageInstaller)
     if (!js.isUndefined(oneClick)) __obj.updateDynamic("oneClick")(oneClick)
     if (!js.isUndefined(packElevateHelper)) __obj.updateDynamic("packElevateHelper")(packElevateHelper)
     if (!js.isUndefined(perMachine)) __obj.updateDynamic("perMachine")(perMachine)
     if (preCompressedFileExtensions != null) __obj.updateDynamic("preCompressedFileExtensions")(preCompressedFileExtensions.asInstanceOf[js.Any])
     if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (!js.isUndefined(runAfterFinish)) __obj.updateDynamic("runAfterFinish")(runAfterFinish)
     if (script != null) __obj.updateDynamic("script")(script)
+    if (shortcutName != null) __obj.updateDynamic("shortcutName")(shortcutName)
     if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode)
     if (uninstallDisplayName != null) __obj.updateDynamic("uninstallDisplayName")(uninstallDisplayName)
     if (uninstallerIcon != null) __obj.updateDynamic("uninstallerIcon")(uninstallerIcon)

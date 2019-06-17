@@ -12,7 +12,7 @@ React Native extension for recording audio
 | Keywords           | react-native, audio, record |
 | # releases         | 14 |
 | # dependents       | 0 |
-| # downloads        | 108170 |
+| # downloads        | 115765 |
 | # stars            | 5 |
 
 ## Links

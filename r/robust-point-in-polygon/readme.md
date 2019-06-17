@@ -12,7 +12,7 @@ Exactly test if a point is inside, outside or on the boundary of a polygon
 | Keywords           | robust, point, in, polygon, pnp, inside, outside, on, exact, arithmetic |
 | # releases         | 0 |
 | # dependents       | 18 |
-| # downloads        | 111398 |
+| # downloads        | 118986 |
 | # stars            | 1 |
 
 ## Links

@@ -10,9 +10,9 @@ A high performance linear algebra library.
 | ------------------ | :-------------: |
 | Full name          | vectorious |
 | Keywords           | matrix, vector, linear, algebra |
-| # releases         | 15 |
+| # releases         | 13 |
 | # dependents       | 4 |
-| # downloads        | 36720 |
+| # downloads        | 32023 |
 | # stars            | 5 |
 
 ## Links

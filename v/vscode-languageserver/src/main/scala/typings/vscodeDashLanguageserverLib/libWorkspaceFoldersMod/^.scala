@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageserver/lib/workspaceFolders", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val WorkspaceFoldersFeature: vscodeDashLanguageserverLib.libMainMod.Feature[vscodeDashLanguageserverLib.libMainMod._RemoteWorkspace, WorkspaceFolders] = js.native
+  val WorkspaceFoldersFeature: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Feature<_RemoteWorkspace, WorkspaceFolders> */ js.Any = js.native
 }
 

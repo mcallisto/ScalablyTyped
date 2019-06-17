@@ -12,7 +12,7 @@ JSON.Stringify as a readable stream
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 3 |
-| # downloads        | 317419 |
+| # downloads        | 334527 |
 | # stars            | 0 |
 
 ## Links

@@ -85,7 +85,9 @@ class Subscriber protected ()
     * @returns {Promise<object>}
     * @private
     */
-  def getClient(): js.Promise[googleDashGaxLib.googleDashGaxMod.ClientStub] = js.native
+  def getClient(): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ClientStub */ _
+  ] = js.native
   /**
     * Modifies the acknowledge deadline for the provided message.
     *

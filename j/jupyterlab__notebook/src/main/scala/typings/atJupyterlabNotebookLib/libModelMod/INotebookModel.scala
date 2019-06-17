@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait INotebookModel
-  extends atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped any */ trait INotebookModel extends js.Object {
   /**
     * The list of cells in the notebook.
     */
@@ -37,26 +37,13 @@ object INotebookModel {
   @scala.inline
   def apply(
     cells: atJupyterlabObservablesLib.libUndoablelistMod.IObservableUndoableList[atJupyterlabCellsLib.libModelMod.ICellModel],
-    contentChanged: atPhosphorSignalingLib.atPhosphorSignalingMod.ISignal[INotebookModel, scala.Unit],
     contentFactory: atJupyterlabNotebookLib.libModelMod.NotebookModelNs.IContentFactory,
-    defaultKernelLanguage: java.lang.String,
-    defaultKernelName: java.lang.String,
     deletedCells: js.Array[java.lang.String],
-    dirty: scala.Boolean,
-    dispose: () => scala.Unit,
-    fromJSON: js.Any => scala.Unit,
-    fromString: java.lang.String => scala.Unit,
-    initialize: () => scala.Unit,
-    isDisposed: scala.Boolean,
     metadata: atJupyterlabObservablesLib.libObservablejsonMod.IObservableJSON,
-    modelDB: atJupyterlabObservablesLib.libModeldbMod.IModelDB,
     nbformat: scala.Double,
-    nbformatMinor: scala.Double,
-    readOnly: scala.Boolean,
-    stateChanged: atPhosphorSignalingLib.atPhosphorSignalingMod.ISignal[INotebookModel, atJupyterlabCoreutilsLib.libInterfacesMod.IChangedArgs[_]],
-    toJSON: () => atPhosphorCoreutilsLib.libJsonMod.JSONValue
+    nbformatMinor: scala.Double
   ): INotebookModel = {
-    val __obj = js.Dynamic.literal(cells = cells, contentChanged = contentChanged, contentFactory = contentFactory, defaultKernelLanguage = defaultKernelLanguage, defaultKernelName = defaultKernelName, deletedCells = deletedCells, dirty = dirty, dispose = js.Any.fromFunction0(dispose), fromJSON = js.Any.fromFunction1(fromJSON), fromString = js.Any.fromFunction1(fromString), initialize = js.Any.fromFunction0(initialize), isDisposed = isDisposed, metadata = metadata, modelDB = modelDB, nbformat = nbformat, nbformatMinor = nbformatMinor, readOnly = readOnly, stateChanged = stateChanged, toJSON = js.Any.fromFunction0(toJSON))
+    val __obj = js.Dynamic.literal(cells = cells, contentFactory = contentFactory, deletedCells = deletedCells, metadata = metadata, nbformat = nbformat, nbformatMinor = nbformatMinor)
   
     __obj.asInstanceOf[INotebookModel]
   }

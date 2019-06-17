@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait WindowsSignOptions extends js.Object {
   val cscInfo: js.UndefOr[FileCodeSigningInfo | CertificateFromStoreInfo | scala.Null] = js.undefined
   val name: js.UndefOr[java.lang.String | scala.Null] = js.undefined
-  val options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WindowsConfiguration */ js.Any
+  val options: appDashBuilderDashLibLib.outOptionsWinOptionsMod.WindowsConfiguration
   val path: java.lang.String
   val site: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
@@ -16,7 +16,7 @@ trait WindowsSignOptions extends js.Object {
 object WindowsSignOptions {
   @scala.inline
   def apply(
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WindowsConfiguration */ js.Any,
+    options: appDashBuilderDashLibLib.outOptionsWinOptionsMod.WindowsConfiguration,
     path: java.lang.String,
     cscInfo: FileCodeSigningInfo | CertificateFromStoreInfo = null,
     name: java.lang.String = null,

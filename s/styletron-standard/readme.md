@@ -11,8 +11,8 @@ Standard interfaces for Styletron
 | Full name          | styletron-standard |
 | Keywords           | - |
 | # releases         | 22 |
-| # dependents       | 6 |
-| # downloads        | 777891 |
+| # dependents       | 5 |
+| # downloads        | 918943 |
 | # stars            | 0 |
 
 ## Links

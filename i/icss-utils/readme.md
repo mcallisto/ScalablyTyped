@@ -10,9 +10,9 @@ ICSS utils for postcss ast
 | ------------------ | :-------------: |
 | Full name          | icss-utils |
 | Keywords           | css, modules, icss, postcss |
-| # releases         | 6 |
-| # dependents       | 38 |
-| # downloads        | 155731626 |
+| # releases         | 8 |
+| # dependents       | 33 |
+| # downloads        | 129696506 |
 | # stars            | 0 |
 
 ## Links

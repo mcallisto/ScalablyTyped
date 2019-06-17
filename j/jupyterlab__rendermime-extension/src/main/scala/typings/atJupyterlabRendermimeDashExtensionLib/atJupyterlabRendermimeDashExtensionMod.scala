@@ -11,6 +11,6 @@ object atJupyterlabRendermimeDashExtensionMod extends js.Object {
   /**
     * A plugin providing a rendermime registry.
     */
-  val default: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLabPlugin[atJupyterlabRendermimeLib.atJupyterlabRendermimeMod.RenderMimeRegistry] = js.native
+  val default: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLabPlugin<RenderMimeRegistry> */ js.Any = js.native
 }
 

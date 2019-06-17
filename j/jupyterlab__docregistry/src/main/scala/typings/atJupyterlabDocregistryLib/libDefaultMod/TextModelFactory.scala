@@ -5,52 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("@jupyterlab/docregistry/lib/default", "TextModelFactory")
+@JSImport("@jupyterlab/docregistry/lib/default", "TextModelFactory")
 @js.native
-class TextModelFactory () extends js.Object {
+class TextModelFactory ()
+  extends atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.CodeModelFactory {
   var _isDisposed: js.Any = js.native
   /**
-    * The type of the file.
+    * Test whether the object has been disposed.
     *
     * #### Notes
-    * This is a read-only property.
+    * This property is always safe to access.
     */
-  val contentType: atJupyterlabServicesLib.libContentsMod.ContentsNs.ContentType = js.native
+  /* CompleteClass */
+  override val isDisposed: scala.Boolean = js.native
   /**
-    * The format of the file.
-    *
-    * This is a read-only property.
-    */
-  val fileFormat: atJupyterlabServicesLib.libContentsMod.ContentsNs.FileFormat = js.native
-  /**
-    * Get whether the model factory has been disposed.
-    */
-  val isDisposed: scala.Boolean = js.native
-  /**
-    * The name of the model type.
+    * Dispose of the resources held by the object.
     *
     * #### Notes
-    * This is a read-only property.
-    */
-  val name: java.lang.String = js.native
-  /**
-    * Create a new model.
+    * If the object's `dispose` method is called more than once, all
+    * calls made after the first will be a no-op.
     *
-    * @param languagePreference - An optional kernel language preference.
-    *
-    * @returns A new document model.
+    * #### Undefined Behavior
+    * It is undefined behavior to use any functionality of the object
+    * after it has been disposed unless otherwise explicitly noted.
     */
-  def createNew(): js.Any = js.native
-  def createNew(languagePreference: java.lang.String): js.Any = js.native
-  def createNew(languagePreference: java.lang.String, modelDB: atJupyterlabObservablesLib.libModeldbMod.IModelDB): js.Any = js.native
-  /**
-    * Dispose of the resources held by the model factory.
-    */
-  def dispose(): scala.Unit = js.native
-  /**
-    * Get the preferred kernel language given a file path.
-    */
-  def preferredLanguage(path: java.lang.String): java.lang.String = js.native
+  /* CompleteClass */
+  override def dispose(): scala.Unit = js.native
 }
 

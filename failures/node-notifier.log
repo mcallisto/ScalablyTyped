@@ -1,7 +1,7 @@
 [info ] InferredDependency.scala:22 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibrarySimple(node-notifier) [id => node-notifier, phase => typescript, file => ../types/node-notifier/index.d.ts] 
 [debug] PhaseRunner.scala:92 Ignored [id => node-notifier, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => node-notifier, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/node-notifier/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/node-notifier),TsIdentLibrarySimple(node-notifier)),TsIdentModule(None,List(node-notifier))) [id => node-notifier, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/node-notifier/index.d.ts),FromFolder(InFolder(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/node-notifier),TsIdentLibrarySimple(node-notifier)),TsIdentModule(None,List(node-notifier))) [id => node-notifier, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(node-notifier) [id => node-notifier, phase => typescript] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(NotificationCenter)))) [id => node-notifier, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-notifier) / TsExport() / TsExporteeTree() / TsDeclInterface(NodeNotifier) / TsMemberProperty(NotificationCenter) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(NotifySend)))) [id => node-notifier, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-notifier) / TsExport() / TsExporteeTree() / TsDeclInterface(NodeNotifier) / TsMemberProperty(NotifySend) / TsTypeQuery())] 
@@ -12,7 +12,13 @@
 [debug] PhaseRunner.scala:84 Success [id => node-notifier, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing node-notifier [id => node-notifier, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => node-notifier, phase => scala.js] 
-[error] NodeNotifier.scala:51 method notify_^ is defined twice;
-  the conflicting method notify_^ was defined at line 49:7,   def `notify_^`(): nodeDashNotifierLib.notifiersToasterMod.^ = js.native [id => node-notifier, phase => build] 
+[warn ] Phase3Compile.scala:206 Building node-notifier... [id => node-notifier, phase => build] 
+[error] Phase3Compile.scala:225 [E] [E1] src/main/scala/typings/nodeDashNotifierLib/nodeDashNotifierMod/NodeNotifier.scala:51:7
+[E]      method notify_^ is defined twice;
+[E]        the conflicting method notify_^ was defined at line 49:7
+[E]      L51:   def `notify_^`(): nodeDashNotifierLib.notifiersToasterMod.^ = js.native
+[E]                 ^
+[E] src/main/scala/typings/nodeDashNotifierLib/nodeDashNotifierMod/NodeNotifier.scala: L51 [E1]
+[E] Failed to compile 'node-notifier'
+ [id => node-notifier, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [node-notifier => Compilation failed] [id => node-notifier, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [node-notifier => Compilation failed] [id => node-notifier, phase => publish] 

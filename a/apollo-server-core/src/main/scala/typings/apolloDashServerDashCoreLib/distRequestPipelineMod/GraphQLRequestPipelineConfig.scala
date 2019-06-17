@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GraphQLRequestPipelineConfig[TContext] extends js.Object {
   var cacheControl: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any
+    apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions
   ] = js.undefined
   var dataSources: js.UndefOr[js.Function0[DataSources[TContext]]] = js.undefined
   var documentStore: js.UndefOr[
@@ -29,7 +29,7 @@ trait GraphQLRequestPipelineConfig[TContext] extends js.Object {
   var formatError: js.UndefOr[
     js.Function1[
       /* error */ graphqlLib.graphqlMod.GraphQLError, 
-      graphqlLib.errorFormatErrorMod.GraphQLFormattedError
+      graphqlLib.errorFormatErrorMod.GraphQLFormattedError[stdLib.Record[java.lang.String, _]]
     ]
   ] = js.undefined
   var formatResponse: js.UndefOr[js.Function] = js.undefined
@@ -52,7 +52,7 @@ object GraphQLRequestPipelineConfig {
   @scala.inline
   def apply[TContext](
     schema: graphqlLib.graphqlMod.GraphQLSchema,
-    cacheControl: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any = null,
+    cacheControl: apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions = null,
     dataSources: () => DataSources[TContext] = null,
     documentStore: apolloDashServerDashCachingLib.apolloDashServerDashCachingMod.InMemoryLRUCache[graphqlLib.languageAstMod.DocumentNode] = null,
     executor: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLExecutor[stdLib.Record[java.lang.String, _]] = null,
@@ -62,7 +62,7 @@ object GraphQLRequestPipelineConfig {
       ]
     ] = null,
     fieldResolver: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, TContext, org.scalablytyped.runtime.StringDictionary[_]] = null,
-    formatError: /* error */ graphqlLib.graphqlMod.GraphQLError => graphqlLib.errorFormatErrorMod.GraphQLFormattedError = null,
+    formatError: /* error */ graphqlLib.graphqlMod.GraphQLError => graphqlLib.errorFormatErrorMod.GraphQLFormattedError[stdLib.Record[java.lang.String, _]] = null,
     formatResponse: js.Function = null,
     parseOptions: graphqlDashToolsLib.distInterfacesMod.GraphQLParseOptions = null,
     persistedQueries: apolloDashServerDashCoreLib.distGraphqlOptionsMod.PersistedQueryOptions = null,

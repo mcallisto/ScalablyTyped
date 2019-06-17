@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "react-motion-loop"
-version := "2.0-dt-20190212Z-0d15d6"
-scalaVersion := "2.12.8"
+version := "2.0-dt-20190212Z-14f62a"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.5-3bfbc5",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-4b3bf2",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-62c565",
-  "org.scalablytyped" %%% "react-motion" % "0.0-unknown-dt-20190509Z-def6af",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "csstype" % "2.6.5-da6515",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-9043ed",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-007242",
+  "org.scalablytyped" %%% "react-motion" % "0.0-unknown-dt-20190509Z-e496f5",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

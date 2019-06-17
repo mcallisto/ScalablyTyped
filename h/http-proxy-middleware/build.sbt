@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "http-proxy-middleware"
-version := "0.19-dt-20190114Z-74cb57"
-scalaVersion := "2.12.8"
+version := "0.19-dt-20190114Z-4e2217"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-07b727",
-  "org.scalablytyped" %%% "http-proxy" % "1.17-dt-20190301Z-3d0d70",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-9415de",
+  "org.scalablytyped" %%% "http-proxy" % "1.17-dt-20190301Z-30fa6d",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-79c22c",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

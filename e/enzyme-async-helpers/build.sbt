@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "enzyme-async-helpers"
-version := "0.9-dt-20190219Z-d1672e"
-scalaVersion := "2.12.8"
+version := "0.9-dt-20190219Z-ed1413"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190322Z-d7045b",
-  "org.scalablytyped" %%% "csstype" % "2.6.5-3bfbc5",
-  "org.scalablytyped" %%% "enzyme" % "3.9-dt-20190524Z-bae559",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-4b3bf2",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-62c565",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190322Z-f1e6cc",
+  "org.scalablytyped" %%% "csstype" % "2.6.5-da6515",
+  "org.scalablytyped" %%% "enzyme" % "3.9-dt-20190524Z-840d56",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-79c22c",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-9043ed",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-007242",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

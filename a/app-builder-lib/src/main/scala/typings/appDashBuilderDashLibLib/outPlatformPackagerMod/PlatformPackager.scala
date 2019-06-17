@@ -7,29 +7,27 @@ import scala.scalajs.js.annotation._
 
 @JSImport("app-builder-lib/out/platformPackager", "PlatformPackager")
 @js.native
-abstract class PlatformPackager[DC /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlatformSpecificBuildOptions */ js.Any */] protected () extends js.Object {
-  protected def this(info: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Packager */ js.Any, platform: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ js.Any) = this()
+abstract class PlatformPackager[DC /* <: appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.PlatformSpecificBuildOptions */] protected () extends js.Object {
+  protected def this(info: appDashBuilderDashLibLib.outMod.Packager, platform: appDashBuilderDashLibLib.outMod.Platform) = this()
   val _resourceList: js.Any = js.native
   val appInfo: appDashBuilderDashLibLib.outAppInfoMod.AppInfo = js.native
   val buildResourcesDir: java.lang.String = js.native
   var checkFileInPackage: js.Any = js.native
-  val compression: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CompressionLevel */ js.Any = js.native
+  val compression: appDashBuilderDashLibLib.outCoreMod.CompressionLevel = js.native
   var computeArtifactName: js.Any = js.native
   var computeAsarOptions: js.Any = js.native
-  val config: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Configuration */ js.Any = js.native
+  val config: appDashBuilderDashLibLib.outConfigurationMod.Configuration = js.native
   var copyAppFiles: js.Any = js.native
   val debugLogger: builderDashUtilLib.builderDashUtilMod.DebugLogger = js.native
   val defaultTarget: js.Array[java.lang.String] = js.native
   val electronDistExecutableName: appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.electron | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.brave = js.native
   val electronDistMacOsExecutableName: appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.Electron | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.Brave = js.native
-  val fileAssociations: js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FileAssociation */ _
-  ] = js.native
+  val fileAssociations: js.Array[appDashBuilderDashLibLib.outOptionsFileAssociationMod.FileAssociation] = js.native
   val forceCodeSigning: scala.Boolean = js.native
   var getExtraFileMatchers: js.Any = js.native
-  val info: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Packager */ js.Any = js.native
-  val packagerOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PackagerOptions */ js.Any = js.native
-  val platform: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ js.Any = js.native
+  val info: appDashBuilderDashLibLib.outMod.Packager = js.native
+  val packagerOptions: appDashBuilderDashLibLib.outPackagerApiMod.PackagerOptions = js.native
+  val platform: appDashBuilderDashLibLib.outMod.Platform = js.native
   val platformSpecificBuildOptions: DC = js.native
   val projectDir: java.lang.String = js.native
   val resourceList: js.Promise[js.Array[java.lang.String]] = js.native
@@ -89,41 +87,33 @@ abstract class PlatformPackager[DC /* <: /* import warning: QualifyReferences.re
   def createGetFileMatchersOptions(
     outDir: java.lang.String,
     arch: builderDashUtilLib.outArchMod.Arch,
-    customBuildOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlatformSpecificBuildOptions */ js.Any
+    customBuildOptions: appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.PlatformSpecificBuildOptions
   ): appDashBuilderDashLibLib.outFileMatcherMod.GetFileMatchersOptions = js.native
   def createTargets(
     targets: js.Array[java.lang.String],
     mapper: js.Function2[
       /* name */ java.lang.String, 
-      /* factory */ js.Function1[
-        /* outDir */ java.lang.String, 
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Target */ _
-      ], 
+      /* factory */ js.Function1[/* outDir */ java.lang.String, appDashBuilderDashLibLib.outMod.Target], 
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /* protected */ def createTransformerForExtraFiles(
-    packContext: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AfterPackContext */ js.Any
-  ): builderDashUtilLib.outFsMod.FileTransformer | scala.Null = js.native
+  /* protected */ def createTransformerForExtraFiles(packContext: appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext): builderDashUtilLib.outFsMod.FileTransformer | scala.Null = js.native
   def dispatchArtifactCreated(file: java.lang.String): js.Promise[scala.Unit] = js.native
+  def dispatchArtifactCreated(file: java.lang.String, target: appDashBuilderDashLibLib.outMod.Target): js.Promise[scala.Unit] = js.native
   def dispatchArtifactCreated(
     file: java.lang.String,
-    target: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Target */ js.Any
-  ): js.Promise[scala.Unit] = js.native
-  def dispatchArtifactCreated(
-    file: java.lang.String,
-    target: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Target */ js.Any,
+    target: appDashBuilderDashLibLib.outMod.Target,
     arch: builderDashUtilLib.outArchMod.Arch
   ): js.Promise[scala.Unit] = js.native
   def dispatchArtifactCreated(
     file: java.lang.String,
-    target: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Target */ js.Any,
+    target: appDashBuilderDashLibLib.outMod.Target,
     arch: builderDashUtilLib.outArchMod.Arch,
     safeArtifactName: java.lang.String
   ): js.Promise[scala.Unit] = js.native
   def dispatchArtifactCreated(
     file: java.lang.String,
-    target: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Target */ js.Any,
+    target: appDashBuilderDashLibLib.outMod.Target,
     arch: scala.Null,
     safeArtifactName: java.lang.String
   ): js.Promise[scala.Unit] = js.native
@@ -139,12 +129,10 @@ abstract class PlatformPackager[DC /* <: /* import warning: QualifyReferences.re
   /* protected */ def doPack(
     outDir: java.lang.String,
     appOutDir: java.lang.String,
-    platformName: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ElectronPlatformName */ js.Any,
+    platformName: appDashBuilderDashLibLib.outElectronElectronFrameworkMod.ElectronPlatformName,
     arch: builderDashUtilLib.outArchMod.Arch,
     platformSpecificBuildOptions: DC,
-    targets: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Target */ _
-    ]
+    targets: js.Array[appDashBuilderDashLibLib.outMod.Target]
   ): js.Promise[scala.Unit] = js.native
   def expandArtifactBeautyNamePattern(targetSpecificOptions: js.UndefOr[scala.Nothing], ext: java.lang.String): java.lang.String = js.native
   def expandArtifactBeautyNamePattern(
@@ -153,11 +141,11 @@ abstract class PlatformPackager[DC /* <: /* import warning: QualifyReferences.re
     arch: builderDashUtilLib.outArchMod.Arch
   ): java.lang.String = js.native
   def expandArtifactBeautyNamePattern(
-    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
+    targetSpecificOptions: appDashBuilderDashLibLib.outCoreMod.TargetSpecificOptions,
     ext: java.lang.String
   ): java.lang.String = js.native
   def expandArtifactBeautyNamePattern(
-    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
+    targetSpecificOptions: appDashBuilderDashLibLib.outCoreMod.TargetSpecificOptions,
     ext: java.lang.String,
     arch: builderDashUtilLib.outArchMod.Arch
   ): java.lang.String = js.native
@@ -196,35 +184,35 @@ abstract class PlatformPackager[DC /* <: /* import warning: QualifyReferences.re
     skipArchIfX64: scala.Boolean
   ): java.lang.String = js.native
   def expandArtifactNamePattern(
-    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
+    targetSpecificOptions: appDashBuilderDashLibLib.outCoreMod.TargetSpecificOptions,
     ext: java.lang.String
   ): java.lang.String = js.native
   def expandArtifactNamePattern(
-    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
+    targetSpecificOptions: appDashBuilderDashLibLib.outCoreMod.TargetSpecificOptions,
     ext: java.lang.String,
     arch: builderDashUtilLib.outArchMod.Arch
   ): java.lang.String = js.native
   def expandArtifactNamePattern(
-    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
+    targetSpecificOptions: appDashBuilderDashLibLib.outCoreMod.TargetSpecificOptions,
     ext: java.lang.String,
     arch: builderDashUtilLib.outArchMod.Arch,
     defaultPattern: java.lang.String
   ): java.lang.String = js.native
   def expandArtifactNamePattern(
-    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
+    targetSpecificOptions: appDashBuilderDashLibLib.outCoreMod.TargetSpecificOptions,
     ext: java.lang.String,
     arch: builderDashUtilLib.outArchMod.Arch,
     defaultPattern: java.lang.String,
     skipArchIfX64: scala.Boolean
   ): java.lang.String = js.native
   def expandArtifactNamePattern(
-    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
+    targetSpecificOptions: appDashBuilderDashLibLib.outCoreMod.TargetSpecificOptions,
     ext: java.lang.String,
     arch: scala.Null,
     defaultPattern: java.lang.String
   ): java.lang.String = js.native
   def expandArtifactNamePattern(
-    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
+    targetSpecificOptions: appDashBuilderDashLibLib.outCoreMod.TargetSpecificOptions,
     ext: java.lang.String,
     arch: scala.Null,
     defaultPattern: java.lang.String,
@@ -291,17 +279,13 @@ abstract class PlatformPackager[DC /* <: /* import warning: QualifyReferences.re
   def pack(
     outDir: java.lang.String,
     arch: builderDashUtilLib.outArchMod.Arch,
-    targets: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Target */ _
-    ],
+    targets: js.Array[appDashBuilderDashLibLib.outMod.Target],
     taskManager: builderDashUtilLib.builderDashUtilMod.AsyncTaskManager
   ): js.Promise[_] = js.native
   /* protected */ def packageInDistributableFormat(
     appOutDir: java.lang.String,
     arch: builderDashUtilLib.outArchMod.Arch,
-    targets: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Target */ _
-    ],
+    targets: js.Array[appDashBuilderDashLibLib.outMod.Target],
     taskManager: builderDashUtilLib.builderDashUtilMod.AsyncTaskManager
   ): scala.Unit = js.native
   /* protected */ def prepareAppInfo(appInfo: appDashBuilderDashLibLib.outAppInfoMod.AppInfo): appDashBuilderDashLibLib.outAppInfoMod.AppInfo = js.native
@@ -310,10 +294,7 @@ abstract class PlatformPackager[DC /* <: /* import warning: QualifyReferences.re
     fallbackSources: js.Array[java.lang.String],
     outputFormat: IconFormat
   ): js.Promise[js.Array[IconInfo]] = js.native
-  /* protected */ def signApp(
-    packContext: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AfterPackContext */ js.Any,
-    isAsar: scala.Boolean
-  ): js.Promise[_] = js.native
+  /* protected */ def signApp(packContext: appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext, isAsar: scala.Boolean): js.Promise[_] = js.native
 }
 
 /* static members */

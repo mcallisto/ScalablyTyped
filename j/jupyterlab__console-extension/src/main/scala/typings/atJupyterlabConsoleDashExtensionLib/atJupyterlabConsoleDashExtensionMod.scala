@@ -11,6 +11,8 @@ object atJupyterlabConsoleDashExtensionMod extends js.Object {
   /**
     * Export the plugins as the default.
     */
-  val default: js.Array[atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLabPlugin[js.Any]] = js.native
+  val default: js.Array[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLabPlugin<any> */ js.Any
+  ] = js.native
 }
 

@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "webtorrent"
-version := "0.98-dt-20190212Z-216315"
-scalaVersion := "2.12.8"
+version := "0.98-dt-20190212Z-198cae"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "bittorrent-protocol" % "2.2-dt-20190212Z-d4acac",
-  "org.scalablytyped" %%% "magnet-uri" % "5.1-dt-20190212Z-47800b",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
-  "org.scalablytyped" %%% "parse-torrent" % "5.8-dt-20190212Z-78a495",
-  "org.scalablytyped" %%% "parse-torrent-file" % "4.0-dt-20190212Z-5291cf",
-  "org.scalablytyped" %%% "simple-peer" % "6.1-dt-20180721Z-72c02c",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "bittorrent-protocol" % "2.2-dt-20190212Z-cab10e",
+  "org.scalablytyped" %%% "magnet-uri" % "5.1-dt-20190212Z-379be3",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-79c22c",
+  "org.scalablytyped" %%% "parse-torrent" % "5.8-dt-20190212Z-9aa618",
+  "org.scalablytyped" %%% "parse-torrent-file" % "4.0-dt-20190212Z-9db467",
+  "org.scalablytyped" %%% "simple-peer" % "6.1-dt-20180721Z-1cb78a",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

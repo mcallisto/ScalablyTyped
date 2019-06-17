@@ -1,7 +1,7 @@
 
 # Scala.js typings for deprecation
 
-Typings are for version 2.0.0
+Typings are for version 2.3.1
 
 ## Library description:
 Log a deprecation message with stack
@@ -10,9 +10,9 @@ Log a deprecation message with stack
 | ------------------ | :-------------: |
 | Full name          | deprecation |
 | Keywords           | deprecate, deprecated, deprecation |
-| # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 2383628 |
+| # releases         | 4 |
+| # dependents       | 2 |
+| # downloads        | 927774 |
 | # stars            | 0 |
 
 ## Links

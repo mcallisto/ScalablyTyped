@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "redux-little-router"
-version := "15.1.2-585a28"
-scalaVersion := "2.12.8"
+version := "15.1.2-fa2b9a"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.5-3bfbc5",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-4b3bf2",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-62c565",
-  "org.scalablytyped" %%% "redux" % "4.0.1-2e6d53",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "csstype" % "2.6.5-da6515",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-9043ed",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-007242",
+  "org.scalablytyped" %%% "redux" % "4.0.1-70acf5",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

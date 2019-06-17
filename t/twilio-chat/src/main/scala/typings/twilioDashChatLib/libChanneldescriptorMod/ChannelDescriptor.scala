@@ -32,10 +32,10 @@ class ChannelDescriptor protected () extends js.Object {
     * @param {Object} descriptor Channel descriptor data object
     * @private
     */
-  def this(client: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Client */ js.Any, descriptor: js.Any) = this()
+  def this(client: twilioDashChatLib.libClientMod.Client, descriptor: js.Any) = this()
   val attributes: js.Object = js.native
   val channel: java.lang.String = js.native
-  var client: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Client */ js.Any = js.native
+  var client: twilioDashChatLib.libClientMod.Client = js.native
   val createdBy: java.lang.String = js.native
   val dateCreated: stdLib.Date = js.native
   val dateUpdated: stdLib.Date = js.native

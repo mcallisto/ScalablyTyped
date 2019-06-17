@@ -12,7 +12,7 @@ trait IOptions extends js.Object {
   /**
     * The document context associated with the editor.
     */
-  var context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.CodeContext
+  var context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.CodeContext */ js.Any
   /**
     * A code editor factory.
     */
@@ -26,7 +26,7 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(
-    context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.CodeContext,
+    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.CodeContext */ js.Any,
     factory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any,
     mimeTypeService: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IEditorMimeTypeService */ js.Any
   ): IOptions = {

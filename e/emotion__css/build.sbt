@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "emotion__css"
-version := "10.0.9-2078ed"
-scalaVersion := "2.12.8"
+version := "10.0.9-95db90"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.5-3bfbc5",
-  "org.scalablytyped" %%% "emotion__serialize" % "0.11.6-23c28e",
-  "org.scalablytyped" %%% "emotion__utils" % "0.11.1-1fe70d",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "csstype" % "2.6.5-da6515",
+  "org.scalablytyped" %%% "emotion__serialize" % "0.11.6-2268c3",
+  "org.scalablytyped" %%% "emotion__utils" % "0.11.1-9fa614",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

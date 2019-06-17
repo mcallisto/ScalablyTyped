@@ -12,7 +12,7 @@ trait IOptions extends js.Object {
   /**
     * The context asssociated with the file.
     */
-  var context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.Context
+  var context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any
   /**
     * The minimum save interval in seconds (default is two minutes).
     */
@@ -22,7 +22,7 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(
-    context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.Context,
+    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any,
     saveInterval: scala.Int | scala.Double = null
   ): IOptions = {
     val __obj = js.Dynamic.literal(context = context)

@@ -10,9 +10,9 @@ Utilities to build DMG. Used by [electron-builder](https://github.com/electron-u
 | ------------------ | :-------------: |
 | Full name          | dmg-builder |
 | Keywords           | - |
-| # releases         | 73 |
+| # releases         | 75 |
 | # dependents       | 3 |
-| # downloads        | 2614189 |
+| # downloads        | 2726454 |
 | # stars            | 0 |
 
 ## Links

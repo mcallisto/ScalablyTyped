@@ -1,0 +1,11 @@
+[debug] PhaseRunner.scala:84 Success [id => react-japgolly-facade, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => react-japgolly-facade, phase => scala.js] 
+[warn ] Phase3Compile.scala:206 Building react-japgolly-facade... [id => react-japgolly-facade, phase => build] 
+[error] Phase3Compile.scala:225 [E] [E1] src/main/scala/typings/reactLib/JapgollyDsl.scala:13:10
+[E]      not found: value japgolly
+[E]      L13:   import japgolly.scalajs.react.raw.JsNumber
+[E]                    ^
+[E] src/main/scala/typings/reactLib/JapgollyDsl.scala: L13 [E1]
+[E] Failed to compile 'react-japgolly-facade'
+ [id => react-japgolly-facade, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [react-japgolly-facade => Compilation failed] [id => react-japgolly-facade, phase => build] 

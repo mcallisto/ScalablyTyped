@@ -68,6 +68,7 @@ object MeshMatcapMaterialParameters {
     polygonOffsetUnits: scala.Int | scala.Double = null,
     precision: threeLib.threeLibStrings.highp | threeLib.threeLibStrings.mediump | threeLib.threeLibStrings.lowp = null,
     premultipliedAlpha: js.UndefOr[scala.Boolean] = js.undefined,
+    shadowSide: threeLib.srcConstantsMod.Side = null,
     side: threeLib.srcConstantsMod.Side = null,
     skinning: js.UndefOr[scala.Boolean] = js.undefined,
     transparent: js.UndefOr[scala.Boolean] = js.undefined,
@@ -117,6 +118,7 @@ object MeshMatcapMaterialParameters {
     if (polygonOffsetUnits != null) __obj.updateDynamic("polygonOffsetUnits")(polygonOffsetUnits.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (!js.isUndefined(premultipliedAlpha)) __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha)
+    if (shadowSide != null) __obj.updateDynamic("shadowSide")(shadowSide)
     if (side != null) __obj.updateDynamic("side")(side)
     if (!js.isUndefined(skinning)) __obj.updateDynamic("skinning")(skinning)
     if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)

@@ -11,6 +11,6 @@ object atJupyterlabFileeditorDashExtensionMod extends js.Object {
   /**
     * The editor tracker extension.
     */
-  val default: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLabPlugin[atJupyterlabFileeditorLib.atJupyterlabFileeditorMod.IEditorTracker] = js.native
+  val default: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLabPlugin<IEditorTracker> */ js.Any = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object interfacesNs {
   type BindConstraint = js.Function2[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify inversifyInterfaces.Bind */ /* bind */ js.Any, 
+    /* bind */ inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Bind, 
     /* target */ js.Any, 
     js.Any
   ]

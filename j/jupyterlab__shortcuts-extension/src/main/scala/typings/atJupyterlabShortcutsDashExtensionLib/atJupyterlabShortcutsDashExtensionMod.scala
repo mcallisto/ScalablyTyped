@@ -37,6 +37,6 @@ object atJupyterlabShortcutsDashExtensionMod extends js.Object {
     * (`'*'`) selector. For almost any use case where a global keyboard shortcut is
     * required, using the `'body'` selector is more appropriate.
     */
-  val default: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLabPlugin[scala.Unit] = js.native
+  val default: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLabPlugin<void> */ js.Any = js.native
 }
 

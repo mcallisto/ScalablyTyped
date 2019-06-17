@@ -12,7 +12,7 @@ An NPM installable package of Apple's Mapkit JS
 | Keywords           | apple, mapkit |
 | # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 1985 |
+| # downloads        | 2426 |
 | # stars            | 0 |
 
 ## Links

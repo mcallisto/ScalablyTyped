@@ -11,9 +11,9 @@ object atJupyterlabImageviewerDashExtensionMod extends js.Object {
   /**
     * The image file handler extension.
     */
-  val default: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLabPlugin[atJupyterlabImageviewerLib.atJupyterlabImageviewerMod.IImageTracker] = js.native
+  val default: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLabPlugin<IImageTracker> */ js.Any = js.native
   def addCommands(
-    app: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLab,
+    app: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLab */ js.Any,
     tracker: atJupyterlabImageviewerLib.atJupyterlabImageviewerMod.IImageTracker
   ): scala.Unit = js.native
 }

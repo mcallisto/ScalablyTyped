@@ -18,7 +18,7 @@ trait IOptions extends js.Object {
   /**
     * A document manager instance.
     */
-  var manager: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentManager */ js.Any
+  var manager: atJupyterlabDocmanagerLib.libManagerMod.IDocumentManager
   /**
     * The time interval for browser refreshing, in ms.
     */
@@ -33,7 +33,7 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(
-    manager: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentManager */ js.Any,
+    manager: atJupyterlabDocmanagerLib.libManagerMod.IDocumentManager,
     driveName: java.lang.String = null,
     refreshInterval: scala.Int | scala.Double = null,
     state: atJupyterlabCoreutilsLib.libStatedbMod.IStateDB = null

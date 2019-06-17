@@ -10,9 +10,9 @@ Typings are for version 0.58.0
 | ------------------ | :-------------: |
 | Full name          | @nivo/tooltip |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 21 |
-| # downloads        | 1931 |
+| # downloads        | 10901 |
 | # stars            | 0 |
 
 ## Links

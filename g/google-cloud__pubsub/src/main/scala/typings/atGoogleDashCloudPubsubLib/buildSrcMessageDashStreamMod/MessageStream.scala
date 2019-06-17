@@ -19,6 +19,7 @@ class MessageStream protected ()
     * @param {stream} stream The StreamingPull stream.
     */
   var _addStream: js.Any = js.native
+  var _fillHandle: js.UndefOr[js.Any] = js.native
   /**
     * Attempts to create and cache the desired number of StreamingPull requests.
     * gRPC does not supply a way to confirm that a stream is connected, so our
@@ -90,6 +91,7 @@ class MessageStream protected ()
     * @param {stream} stream The stream to remove.
     */
   var _removeStream: js.Any = js.native
+  var _retrier: js.Any = js.native
   /**
     * Neither gRPC or gax allow for the highWaterMark option to be specified.
     * However using the default value (16) it is possible to end up with a lot of

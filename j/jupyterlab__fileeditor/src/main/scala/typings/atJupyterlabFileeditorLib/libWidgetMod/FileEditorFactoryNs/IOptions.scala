@@ -16,24 +16,14 @@ trait IOptions extends js.Object {
   /**
     * The factory options associated with the factory.
     */
-  var factoryOptions: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IWidgetFactoryOptions[
-    atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-      atJupyterlabFileeditorLib.libWidgetMod.FileEditor, 
-      atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-    ]
-  ]
+  var factoryOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IWidgetFactoryOptions<IDocumentWidget<FileEditor>> */ js.Any
 }
 
 object IOptions {
   @scala.inline
   def apply(
     editorServices: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IEditorServices */ js.Any,
-    factoryOptions: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IWidgetFactoryOptions[
-      atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-        atJupyterlabFileeditorLib.libWidgetMod.FileEditor, 
-        atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-      ]
-    ]
+    factoryOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IWidgetFactoryOptions<IDocumentWidget<FileEditor>> */ js.Any
   ): IOptions = {
     val __obj = js.Dynamic.literal(editorServices = editorServices, factoryOptions = factoryOptions)
   

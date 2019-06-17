@@ -1,12 +1,21 @@
 [debug] PhaseRunner.scala:84 Success [id => postmate, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/postmate/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/postmate),TsIdentLibrarySimple(postmate)),TsIdentModule(None,List(postmate))) [id => postmate, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/postmate/index.d.ts),FromFolder(InFolder(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/postmate),TsIdentLibrarySimple(postmate)),TsIdentModule(None,List(postmate))) [id => postmate, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(postmate)) [id => postmate, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(postmate) [id => postmate, phase => typescript] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => postmate, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(postmate) / TsDeclInterface(Postmate))] 
 [debug] PhaseRunner.scala:84 Success [id => postmate, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing postmate [id => postmate, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => postmate, phase => scala.js] 
-[error] ^.scala:11 class Promise is inherited twice,   extends js.Promise[ParentAPI] [id => postmate, phase => build] 
-[error] ^.scala:12 class Promise is inherited twice,      with Postmate { [id => postmate, phase => build] 
+[warn ] Phase3Compile.scala:206 Building postmate... [id => postmate, phase => build] 
+[error] Phase3Compile.scala:225 [E] [E2] src/main/scala/typings/postmateLib/postmateMod/^.scala:12:11
+[E]      class Promise is inherited twice
+[E]      L12:      with Postmate {
+[E]                     ^
+[E] [E1] src/main/scala/typings/postmateLib/postmateMod/^.scala:11:14
+[E]      class Promise is inherited twice
+[E]      L11:   extends js.Promise[ParentAPI]
+[E]                        ^
+[E] src/main/scala/typings/postmateLib/postmateMod/^.scala: L11 [E1], L12 [E2]
+[E] Failed to compile 'postmate'
+ [id => postmate, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [postmate => Compilation failed] [id => postmate, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [postmate => Compilation failed] [id => postmate, phase => publish] 

@@ -9,9 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class BaseMiddleware () extends js.Object {
   val httpContext: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.HttpContext = js.native
-  /* protected */ def bind[T](
-    serviceIdentifier: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify inversifyInterfaces.ServiceIdentifier<T> */ js.Any
-  ): js.Any = js.native
+  /* protected */ def bind[T](serviceIdentifier: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.ServiceIdentifier[T]): inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.BindingToSyntax[T] = js.native
   def handler(
     req: expressLib.expressMod.Request,
     res: expressLib.expressMod.Response,

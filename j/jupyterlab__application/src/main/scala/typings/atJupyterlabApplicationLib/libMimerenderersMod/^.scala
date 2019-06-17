@@ -10,15 +10,17 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val IMimeDocumentTracker: atPhosphorCoreutilsLib.atPhosphorCoreutilsMod.Token[IMimeDocumentTracker] = js.native
   def createRendermimePlugin(
-    tracker: atJupyterlabApputilsLib.atJupyterlabApputilsMod.InstanceTracker[atJupyterlabDocregistryLib.atJupyterlabDocregistryMod.MimeDocument],
+    tracker: atJupyterlabApputilsLib.atJupyterlabApputilsMod.InstanceTracker[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MimeDocument */ _
+    ],
     item: atJupyterlabRendermimeDashInterfacesLib.atJupyterlabRendermimeDashInterfacesMod.IRenderMimeNs.IExtension
-  ): js.Any = js.native
+  ): atJupyterlabApplicationLib.libMod.JupyterLabPlugin[scala.Unit] = js.native
   def createRendermimePlugins(
     extensions: js.Array[
       atJupyterlabRendermimeDashInterfacesLib.atJupyterlabRendermimeDashInterfacesMod.IRenderMimeNs.IExtensionModule
     ]
   ): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLabPlugin<void | IMimeDocumentTracker> */ _
+    atJupyterlabApplicationLib.libMod.JupyterLabPlugin[scala.Unit | IMimeDocumentTracker]
   ] = js.native
 }
 

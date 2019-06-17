@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "vega-tooltip"
-version := "0.12.0-1ce602"
-scalaVersion := "2.12.8"
+version := "0.12.0-f7da93"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119",
-  "org.scalablytyped" %%% "vega-typings" % "0.7.1-14153f",
-  "org.scalablytyped" %%% "vega-util" % "1.10.0-110b8b")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7",
+  "org.scalablytyped" %%% "vega-typings" % "0.7.1-fa8bb1",
+  "org.scalablytyped" %%% "vega-util" % "1.10.0-a6995e")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

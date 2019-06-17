@@ -57,11 +57,8 @@ class DocumentWidgetManager protected ()
     * @param widget - The widget to adopt.
     */
   def adoptWidget(
-    context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.Context,
-    widget: atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-      atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget, 
-      atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-    ]
+    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any,
+    widget: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
   ): scala.Unit = js.native
   /**
     * Clone a widget.
@@ -75,17 +72,16 @@ class DocumentWidgetManager protected ()
     *  if the source widget is not managed by this manager.
     */
   def cloneWidget(widget: atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget): js.UndefOr[
-    atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-      atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget, 
-      atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-    ]
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
   ] = js.native
   /**
     * Close the widgets associated with a given context.
     *
     * @param context - The document context object.
     */
-  def closeWidgets(context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.Context): js.Promise[scala.Unit] = js.native
+  def closeWidgets(
+    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any
+  ): js.Promise[scala.Unit] = js.native
   /**
     * Get the document context for a widget.
     *
@@ -93,7 +89,9 @@ class DocumentWidgetManager protected ()
     *
     * @returns The context associated with the widget, or `undefined`.
     */
-  def contextForWidget(widget: atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget): js.UndefOr[atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.Context] = js.native
+  def contextForWidget(widget: atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget): js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any
+  ] = js.native
   /**
     * Create a widget for a document and handle its lifecycle.
     *
@@ -106,19 +104,18 @@ class DocumentWidgetManager protected ()
     * @throws If the factory is not registered.
     */
   def createWidget(
-    factory: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.WidgetFactory,
-    context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.Context
-  ): atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-    atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget, 
-    atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-  ] = js.native
+    factory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.WidgetFactory */ js.Any,
+    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any
+  ): js.Any = js.native
   /**
     * Dispose of the widgets associated with a given context
     * regardless of the widget's dirty state.
     *
     * @param context - The document context object.
     */
-  def deleteWidgets(context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.Context): js.Promise[scala.Unit] = js.native
+  def deleteWidgets(
+    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any
+  ): js.Promise[scala.Unit] = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -144,13 +141,10 @@ class DocumentWidgetManager protected ()
     * a new widget.
     */
   def findWidget(
-    context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.Context,
+    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any,
     widgetName: java.lang.String
   ): js.UndefOr[
-    atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-      atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget, 
-      atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-    ]
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
   ] = js.native
   /**
     * Filter a message sent to a message handler.

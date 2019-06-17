@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "bro-fs"
-version := "0.4-dt-20190326Z-f8a7f6"
-scalaVersion := "2.12.8"
+version := "0.4-dt-20190326Z-c2768d"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20190322Z-77f4f8",
-  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20190322Z-2cdd35",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20190322Z-6661c8",
+  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20190322Z-0692d9",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

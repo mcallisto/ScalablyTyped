@@ -11,8 +11,8 @@ convert a string to snake case
 | Full name          | just-snake-case |
 | Keywords           | snake, snake_case, string, no-dependencies, just |
 | # releases         | 2 |
-| # dependents       | 12 |
-| # downloads        | 234417 |
+| # dependents       | 13 |
+| # downloads        | 285430 |
 | # stars            | 1 |
 
 ## Links

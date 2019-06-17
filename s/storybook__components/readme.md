@@ -10,15 +10,15 @@ Core Storybook Components
 | ------------------ | :-------------: |
 | Full name          | @storybook/components |
 | Keywords           | storybook |
-| # releases         | 272 |
-| # dependents       | 44 |
-| # downloads        | 30804799 |
+| # releases         | 233 |
+| # dependents       | 38 |
+| # downloads        | 52436300 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/storybookjs/storybook/tree/master/lib/components)
-- [Bugs](https://github.com/storybookjs/storybook/issues)
-- [Repository](https://github.com/storybookjs/storybook)
+- [Homepage](https://github.com/storybooks/storybook/tree/master/lib/components)
+- [Bugs](https://github.com/storybooks/storybook/issues)
+- [Repository](https://github.com/storybooks/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Fcomponents)
     
 

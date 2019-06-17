@@ -17,6 +17,7 @@ object DebOptions {
   def apply(
     afterInstall: java.lang.String = null,
     afterRemove: java.lang.String = null,
+    artifactName: java.lang.String = null,
     category: java.lang.String = null,
     compression: appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.gz | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.bzip2 | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.xz = null,
     depends: js.Array[java.lang.String] = null,
@@ -28,12 +29,14 @@ object DebOptions {
     mimeTypes: js.Array[java.lang.String] = null,
     packageCategory: java.lang.String = null,
     priority: java.lang.String = null,
+    publish: builderDashUtilDashRuntimeLib.outPublishOptionsMod.Publish = null,
     synopsis: java.lang.String = null,
     vendor: java.lang.String = null
   ): DebOptions = {
     val __obj = js.Dynamic.literal()
     if (afterInstall != null) __obj.updateDynamic("afterInstall")(afterInstall)
     if (afterRemove != null) __obj.updateDynamic("afterRemove")(afterRemove)
+    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName)
     if (category != null) __obj.updateDynamic("category")(category)
     if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
     if (depends != null) __obj.updateDynamic("depends")(depends)
@@ -45,6 +48,7 @@ object DebOptions {
     if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes)
     if (packageCategory != null) __obj.updateDynamic("packageCategory")(packageCategory)
     if (priority != null) __obj.updateDynamic("priority")(priority)
+    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
     if (synopsis != null) __obj.updateDynamic("synopsis")(synopsis)
     if (vendor != null) __obj.updateDynamic("vendor")(vendor)
     __obj.asInstanceOf[DebOptions]

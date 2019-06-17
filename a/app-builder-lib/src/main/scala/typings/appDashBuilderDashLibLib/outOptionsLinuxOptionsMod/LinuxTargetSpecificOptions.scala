@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait LinuxTargetSpecificOptions extends CommonLinuxOptions {
+trait LinuxTargetSpecificOptions
+  extends CommonLinuxOptions
+     with appDashBuilderDashLibLib.outCoreMod.TargetSpecificOptions {
   val afterInstall: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   val afterRemove: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
@@ -40,6 +41,7 @@ object LinuxTargetSpecificOptions {
   def apply(
     afterInstall: java.lang.String = null,
     afterRemove: java.lang.String = null,
+    artifactName: java.lang.String = null,
     category: java.lang.String = null,
     compression: appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.gz | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.bzip2 | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.xz = null,
     depends: js.Array[java.lang.String] = null,
@@ -50,12 +52,14 @@ object LinuxTargetSpecificOptions {
     maintainer: java.lang.String = null,
     mimeTypes: js.Array[java.lang.String] = null,
     packageCategory: java.lang.String = null,
+    publish: builderDashUtilDashRuntimeLib.outPublishOptionsMod.Publish = null,
     synopsis: java.lang.String = null,
     vendor: java.lang.String = null
   ): LinuxTargetSpecificOptions = {
     val __obj = js.Dynamic.literal()
     if (afterInstall != null) __obj.updateDynamic("afterInstall")(afterInstall)
     if (afterRemove != null) __obj.updateDynamic("afterRemove")(afterRemove)
+    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName)
     if (category != null) __obj.updateDynamic("category")(category)
     if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
     if (depends != null) __obj.updateDynamic("depends")(depends)
@@ -66,6 +70,7 @@ object LinuxTargetSpecificOptions {
     if (maintainer != null) __obj.updateDynamic("maintainer")(maintainer)
     if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes)
     if (packageCategory != null) __obj.updateDynamic("packageCategory")(packageCategory)
+    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
     if (synopsis != null) __obj.updateDynamic("synopsis")(synopsis)
     if (vendor != null) __obj.updateDynamic("vendor")(vendor)
     __obj.asInstanceOf[LinuxTargetSpecificOptions]

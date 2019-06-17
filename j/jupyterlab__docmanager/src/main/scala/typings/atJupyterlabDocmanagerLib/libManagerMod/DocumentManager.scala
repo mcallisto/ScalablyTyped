@@ -78,7 +78,7 @@ class DocumentManager protected ()
   /**
     * The registry used by the manager.
     */
-  val registry: atJupyterlabDocregistryLib.atJupyterlabDocregistryMod.DocumentRegistry = js.native
+  val registry: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry */ js.Any = js.native
   /**
     * The service manager used by the manager.
     */
@@ -95,10 +95,7 @@ class DocumentManager protected ()
     *  `undefined` if the source widget is not managed by this manager.
     */
   def cloneWidget(widget: atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget): js.UndefOr[
-    atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-      atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget, 
-      atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-    ]
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
   ] = js.native
   /**
     * Close all of the open documents.
@@ -122,7 +119,9 @@ class DocumentManager protected ()
     * @returns The context associated with the widget, or `undefined` if no such
     * context exists.
     */
-  def contextForWidget(widget: atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget): js.UndefOr[atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.Context] = js.native
+  def contextForWidget(widget: atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget): js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any
+  ] = js.native
   /**
     * Copy a file.
     *
@@ -194,16 +193,10 @@ class DocumentManager protected ()
     * a new widget.
     */
   def findWidget(path: java.lang.String): js.UndefOr[
-    atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-      atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget, 
-      atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-    ]
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
   ] = js.native
   def findWidget(path: java.lang.String, widgetName: java.lang.String): js.UndefOr[
-    atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-      atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget, 
-      atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-    ]
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
   ] = js.native
   /**
     * Create a new untitled file.
@@ -227,37 +220,25 @@ class DocumentManager protected ()
     * cannot be found.
     */
   def open(path: java.lang.String): js.UndefOr[
-    atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-      atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget, 
-      atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-    ]
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
   ] = js.native
   def open(path: java.lang.String, widgetName: java.lang.String): js.UndefOr[
-    atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-      atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget, 
-      atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-    ]
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
   ] = js.native
   def open(
     path: java.lang.String,
     widgetName: java.lang.String,
     kernel: stdLib.Partial[atJupyterlabServicesLib.libKernelKernelMod.KernelNs.IModel]
   ): js.UndefOr[
-    atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-      atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget, 
-      atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-    ]
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
   ] = js.native
   def open(
     path: java.lang.String,
     widgetName: java.lang.String,
     kernel: stdLib.Partial[atJupyterlabServicesLib.libKernelKernelMod.KernelNs.IModel],
-    options: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IOpenOptions
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IOpenOptions */ js.Any
   ): js.UndefOr[
-    atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-      atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget, 
-      atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-    ]
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
   ] = js.native
   /**
     * Open a file and return the widget used to view it.
@@ -276,37 +257,25 @@ class DocumentManager protected ()
     * cannot be found.
     */
   def openOrReveal(path: java.lang.String): js.UndefOr[
-    atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-      atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget, 
-      atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-    ]
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
   ] = js.native
   def openOrReveal(path: java.lang.String, widgetName: java.lang.String): js.UndefOr[
-    atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-      atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget, 
-      atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-    ]
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
   ] = js.native
   def openOrReveal(
     path: java.lang.String,
     widgetName: java.lang.String,
     kernel: stdLib.Partial[atJupyterlabServicesLib.libKernelKernelMod.KernelNs.IModel]
   ): js.UndefOr[
-    atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-      atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget, 
-      atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-    ]
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
   ] = js.native
   def openOrReveal(
     path: java.lang.String,
     widgetName: java.lang.String,
     kernel: stdLib.Partial[atJupyterlabServicesLib.libKernelKernelMod.KernelNs.IModel],
-    options: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IOpenOptions
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IOpenOptions */ js.Any
   ): js.UndefOr[
-    atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-      atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget, 
-      atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-    ]
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
   ] = js.native
   /**
     * Overwrite a file.

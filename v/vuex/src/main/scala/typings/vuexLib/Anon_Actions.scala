@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Actions[S] extends js.Object {
-  var actions: js.UndefOr[vuexLib.typesMod.ActionTree[S, S]] = js.undefined
-  var getters: js.UndefOr[vuexLib.typesMod.GetterTree[S, S]] = js.undefined
-  var modules: js.UndefOr[vuexLib.typesMod.ModuleTree[S]] = js.undefined
-  var mutations: js.UndefOr[vuexLib.typesMod.MutationTree[S]] = js.undefined
+  var actions: js.UndefOr[vuexLib.vuexMod.ActionTree[S, S]] = js.undefined
+  var getters: js.UndefOr[vuexLib.vuexMod.GetterTree[S, S]] = js.undefined
+  var modules: js.UndefOr[vuexLib.vuexMod.ModuleTree[S]] = js.undefined
+  var mutations: js.UndefOr[vuexLib.vuexMod.MutationTree[S]] = js.undefined
 }
 
 object Anon_Actions {
   @scala.inline
   def apply[S](
-    actions: vuexLib.typesMod.ActionTree[S, S] = null,
-    getters: vuexLib.typesMod.GetterTree[S, S] = null,
-    modules: vuexLib.typesMod.ModuleTree[S] = null,
-    mutations: vuexLib.typesMod.MutationTree[S] = null
+    actions: vuexLib.vuexMod.ActionTree[S, S] = null,
+    getters: vuexLib.vuexMod.GetterTree[S, S] = null,
+    modules: vuexLib.vuexMod.ModuleTree[S] = null,
+    mutations: vuexLib.vuexMod.MutationTree[S] = null
   ): Anon_Actions[S] = {
     val __obj = js.Dynamic.literal()
     if (actions != null) __obj.updateDynamic("actions")(actions)

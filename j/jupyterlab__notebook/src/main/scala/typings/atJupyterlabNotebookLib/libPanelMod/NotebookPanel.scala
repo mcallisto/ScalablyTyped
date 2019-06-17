@@ -5,20 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@jupyterlab/notebook/lib/panel", "NotebookPanel")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped any */ @JSImport("@jupyterlab/notebook/lib/panel", "NotebookPanel")
 @js.native
-class NotebookPanel protected ()
-  extends atJupyterlabDocregistryLib.atJupyterlabDocregistryMod.DocumentWidget[
-      atJupyterlabNotebookLib.libWidgetMod.Notebook, 
-      atJupyterlabNotebookLib.libModelMod.INotebookModel
-    ] {
+class NotebookPanel protected () extends js.Object {
   /**
     * Construct a new notebook panel.
     */
-  def this(options: atJupyterlabDocregistryLib.libDefaultMod.DocumentWidgetNs.IOptions[
-      atJupyterlabNotebookLib.libWidgetMod.Notebook, 
-      atJupyterlabNotebookLib.libModelMod.INotebookModel
-    ]) = this()
+  def this(options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentWidget.IOptions<Notebook, INotebookModel> */ js.Any) = this()
   var _activated: js.Any = js.native
   /**
     * Handle a change in the kernel by updating the document metadata.
@@ -36,6 +30,10 @@ class NotebookPanel protected ()
     * A signal emitted when the panel has been activated.
     */
   val activated: atPhosphorSignalingLib.atPhosphorSignalingMod.ISignal[this.type, scala.Unit] = js.native
+  /**
+    * The notebook used by the widget.
+    */
+  val content: atJupyterlabNotebookLib.libWidgetMod.Notebook = js.native
   /**
     * The content factory for the notebook.
     *
@@ -58,5 +56,13 @@ class NotebookPanel protected ()
     * The client session used by the panel.
     */
   val session: atJupyterlabApputilsLib.libClientsessionMod.IClientSession = js.native
+  /**
+    * Dispose of the resources used by the widget.
+    */
+  def dispose(): scala.Unit = js.native
+  /**
+    * Handle `'activate-request'` messages.
+    */
+  /* protected */ def onActivateRequest(msg: atPhosphorMessagingLib.atPhosphorMessagingMod.Message): scala.Unit = js.native
 }
 

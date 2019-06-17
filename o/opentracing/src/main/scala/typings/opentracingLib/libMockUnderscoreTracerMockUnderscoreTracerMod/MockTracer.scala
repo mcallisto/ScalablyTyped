@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("opentracing/lib/mock_tracer/mock_tracer", "MockTracer")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped any */ @JSImport("opentracing/lib/mock_tracer/mock_tracer", "MockTracer")
 @js.native
-class MockTracer ()
-  extends opentracingLib.libMod.Tracer {
+class MockTracer () extends js.Object {
   var _spans: js.Any = js.native
   /* private */ def _allocSpan(): js.Any = js.native
   /* protected */ def _extract(format: js.Any, carrier: js.Any): scala.Nothing = js.native
@@ -17,6 +17,10 @@ class MockTracer ()
     format: js.Any,
     carrier: js.Any
   ): scala.Nothing = js.native
+  /* protected */ def _startSpan(
+    name: java.lang.String,
+    fields: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify opentracing.SpanOptions */ js.Any
+  ): opentracingLib.libMockUnderscoreTracerMockUnderscoreSpanMod.default = js.native
   /**
     * Discard any buffered data.
     */

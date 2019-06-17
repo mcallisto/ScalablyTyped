@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 package object atJupyterlabImageviewerMod {
   type IImageTracker = atJupyterlabApputilsLib.libInstancetrackerMod.IInstanceTracker[
-    atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-      atJupyterlabImageviewerLib.libWidgetMod.ImageViewer, 
-      atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-    ]
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget<ImageViewer> */ js.Any
   ]
 }

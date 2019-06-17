@@ -2,12 +2,13 @@
 # Scala.js typings for emscripten
 
 
-
+## Library description:
+Node API for Emscripten SDK
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | emscripten |
-| Keywords           | - |
+| Keywords           | node, emscripten, emcc, sdk, wasm, webassembly |
 | # releases         | 0 |
 | # dependents       | 0 |
 | # downloads        | 0 |

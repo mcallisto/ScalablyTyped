@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "nivo__scatterplot"
-version := "0.58.0-7696f8"
-scalaVersion := "2.12.8"
+version := "0.58.0-3fdfc3"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.5-3bfbc5",
-  "org.scalablytyped" %%% "nivo__axes" % "0.58.0-5d900c",
-  "org.scalablytyped" %%% "nivo__colors" % "0.58.0-197c08",
-  "org.scalablytyped" %%% "nivo__core" % "0.58.0-8429d9",
-  "org.scalablytyped" %%% "nivo__legends" % "0.58.0-5c23b1",
-  "org.scalablytyped" %%% "nivo__scales" % "0.58.0-f42710",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-4b3bf2",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-62c565",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "csstype" % "2.6.5-da6515",
+  "org.scalablytyped" %%% "nivo__axes" % "0.58.0-31756f",
+  "org.scalablytyped" %%% "nivo__colors" % "0.58.0-fe128a",
+  "org.scalablytyped" %%% "nivo__core" % "0.58.0-97effe",
+  "org.scalablytyped" %%% "nivo__legends" % "0.58.0-16e750",
+  "org.scalablytyped" %%% "nivo__scales" % "0.58.0-088cda",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-9043ed",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190613Z-007242",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

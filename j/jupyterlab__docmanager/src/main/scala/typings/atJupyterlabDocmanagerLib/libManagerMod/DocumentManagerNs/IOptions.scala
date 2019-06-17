@@ -20,7 +20,7 @@ trait IOptions extends js.Object {
   /**
     * A document registry instance.
     */
-  var registry: atJupyterlabDocregistryLib.atJupyterlabDocregistryMod.DocumentRegistry
+  var registry: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry */ js.Any
   /**
     * A function called when a kernel is busy.
     */
@@ -36,7 +36,7 @@ object IOptions {
   def apply(
     manager: atJupyterlabServicesLib.libManagerMod.ServiceManagerNs.IManager,
     opener: IWidgetOpener,
-    registry: atJupyterlabDocregistryLib.atJupyterlabDocregistryMod.DocumentRegistry,
+    registry: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry */ js.Any,
     setBusy: () => atPhosphorDisposableLib.atPhosphorDisposableMod.IDisposable = null,
     when: js.Promise[scala.Unit] = null
   ): IOptions = {

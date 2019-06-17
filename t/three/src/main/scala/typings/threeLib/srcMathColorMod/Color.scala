@@ -20,6 +20,7 @@ class Color () extends js.Object {
     * Green channel value between 0 and 1. Default is 1.
     */
   var g: scala.Double = js.native
+  var isColor: scala.Boolean = js.native
   /**
     * Red channel value between 0 and 1. Default is 1.
     */
@@ -35,6 +36,14 @@ class Color () extends js.Object {
     * Converts this color from linear to gamma space.
     */
   def convertLinearToGamma(): Color = js.native
+  /**
+  	 * Converts this color from linear to sRGB space.
+  	 */
+  def convertLinearToSRGB(): Color = js.native
+  /**
+  	 * Converts this color from sRGB to linear space.
+  	 */
+  def convertSRGBToLinear(): Color = js.native
   /**
     * Copies given color.
     * @param color Color to copy.
@@ -52,6 +61,16 @@ class Color () extends js.Object {
     */
   def copyLinearToGamma(color: Color): Color = js.native
   def copyLinearToGamma(color: Color, gammaFactor: scala.Double): Color = js.native
+  /**
+  	 * Copies given color making conversion from linear to sRGB space.
+  	 * @param color Color to copy.
+  	 */
+  def copyLinearToSRGB(): Color = js.native
+  /**
+    * Copies given color making conversion from sRGB to linear space.
+    * @param color Color to copy.
+    */
+  def copySRGBToLinear(): Color = js.native
   def equals(color: Color): scala.Boolean = js.native
   def fromArray(rgb: js.Array[scala.Double]): this.type = js.native
   def fromArray(rgb: js.Array[scala.Double], offset: scala.Double): this.type = js.native

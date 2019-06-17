@@ -10,9 +10,9 @@ Prettier formatter for package.json files
 | ------------------ | :-------------: |
 | Full name          | prettier-package-json |
 | Keywords           | cleanup, formatter, json, keys, object, package, package.json, prettier, sort |
-| # releases         | 18 |
+| # releases         | 10 |
 | # dependents       | 7 |
-| # downloads        | 416769 |
+| # downloads        | 439470 |
 | # stars            | 1 |
 
 ## Links

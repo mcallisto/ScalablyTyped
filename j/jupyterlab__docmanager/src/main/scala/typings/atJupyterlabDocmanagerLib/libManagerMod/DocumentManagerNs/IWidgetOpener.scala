@@ -14,17 +14,11 @@ trait IWidgetOpener extends js.Object {
     * Open the given widget.
     */
   def open(
-    widget: atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-      atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget, 
-      atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-    ]
+    widget: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
   ): scala.Unit = js.native
   def open(
-    widget: atJupyterlabDocregistryLib.libRegistryMod.IDocumentWidget[
-      atPhosphorWidgetsLib.atPhosphorWidgetsMod.Widget, 
-      atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IModel
-    ],
-    options: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IOpenOptions
+    widget: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any,
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IOpenOptions */ js.Any
   ): scala.Unit = js.native
 }
 

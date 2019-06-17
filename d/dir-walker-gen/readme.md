@@ -10,9 +10,9 @@ A javascript generator pattern for directlry listing
 | ------------------ | :-------------: |
 | Full name          | dir-walker-gen |
 | Keywords           | utils, fs, filesystem, directory, generator |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 170 |
+| # downloads        | 202 |
 | # stars            | 0 |
 
 ## Links

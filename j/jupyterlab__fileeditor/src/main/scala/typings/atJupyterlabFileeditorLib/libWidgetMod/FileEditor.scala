@@ -13,7 +13,7 @@ class FileEditor protected ()
     * Construct a new editor widget.
     */
   def this(options: atJupyterlabFileeditorLib.libWidgetMod.FileEditorNs.IOptions) = this()
-  var _context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.Context = js.native
+  var _context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any = js.native
   /**
     * Ensure that the widget has focus.
     */
@@ -26,7 +26,7 @@ class FileEditor protected ()
   /**
     * Get the context for the editor widget.
     */
-  val context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.Context = js.native
+  val context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any = js.native
   var editor: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any = js.native
   var editorWidget: js.Any = js.native
   var model: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IModel */ js.Any = js.native

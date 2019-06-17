@@ -11,8 +11,8 @@ Get a random useragent (with an optional filter)
 | Full name          | random-useragent |
 | Keywords           | random, useragent, user-agent, user, agent, data, web, developer |
 | # releases         | 1 |
-| # dependents       | 26 |
-| # downloads        | 212942 |
+| # dependents       | 25 |
+| # downloads        | 222873 |
 | # stars            | 4 |
 
 ## Links

@@ -11,6 +11,6 @@ object atJupyterlabMathjax2DashExtensionMod extends js.Object {
   /**
     * The MathJax latexTypesetter plugin.
     */
-  val default: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLabPlugin[atJupyterlabRendermimeLib.libRegistryMod.ILatexTypesetter] = js.native
+  val default: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLabPlugin<ILatexTypesetter> */ js.Any = js.native
 }
 

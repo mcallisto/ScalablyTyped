@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("rrule/dist/esm/src/nlp/totext", JSImport.Default)
 @js.native
 class default protected () extends ToText {
-  def this(rrule: rruleLib.distEsmSrcMod.default) = this()
-  def this(rrule: rruleLib.distEsmSrcMod.default, gettext: GetText) = this()
-  def this(rrule: rruleLib.distEsmSrcMod.default, gettext: GetText, language: rruleLib.distEsmSrcNlpI18nMod.Language) = this()
-  def this(rrule: rruleLib.distEsmSrcMod.default, gettext: GetText, language: rruleLib.distEsmSrcNlpI18nMod.Language, dateFormatter: DateFormatter) = this()
+  def this(rrule: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RRule */ js.Any) = this()
+  def this(rrule: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RRule */ js.Any, gettext: GetText) = this()
+  def this(rrule: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RRule */ js.Any, gettext: GetText, language: rruleLib.distEsmSrcNlpI18nMod.Language) = this()
+  def this(rrule: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RRule */ js.Any, gettext: GetText, language: rruleLib.distEsmSrcNlpI18nMod.Language, dateFormatter: DateFormatter) = this()
 }
 
 /* static members */
@@ -24,6 +24,6 @@ object default extends js.Object {
     * @param {RRule} rrule
     * @return {Boolean}
     */
-  def isFullyConvertible(rrule: rruleLib.distEsmSrcMod.default): scala.Boolean = js.native
+  def isFullyConvertible(rrule: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RRule */ js.Any): scala.Boolean = js.native
 }
 

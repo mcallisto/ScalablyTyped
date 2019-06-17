@@ -11,7 +11,7 @@ trait LogEntry extends js.Object {
   var guid: java.lang.String
   var multiInject: scala.Boolean
   var results: js.Array[_]
-  var rootRequest: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify inversify.interfaces.Request */ js.Any
+  var rootRequest: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Request
   var serviceIdentifier: js.Any
   var time: java.lang.String
 }
@@ -24,7 +24,7 @@ object LogEntry {
     guid: java.lang.String,
     multiInject: scala.Boolean,
     results: js.Array[_],
-    rootRequest: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify inversify.interfaces.Request */ js.Any,
+    rootRequest: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Request,
     serviceIdentifier: js.Any,
     time: java.lang.String
   ): LogEntry = {

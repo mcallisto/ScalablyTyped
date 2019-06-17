@@ -10,9 +10,9 @@ Typings are for version 0.4.0
 | ------------------ | :-------------: |
 | Full name          | apollo-server-caching |
 | Keywords           | - |
-| # releases         | 29 |
-| # dependents       | 21 |
-| # downloads        | 6168569 |
+| # releases         | 31 |
+| # dependents       | 23 |
+| # downloads        | 7217065 |
 | # stars            | 0 |
 
 ## Links

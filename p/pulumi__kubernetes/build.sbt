@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "pulumi__kubernetes"
-version := "0.23.1-172979"
-scalaVersion := "2.12.8"
+version := "0.23.1-85b64d"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "pulumi__pulumi" % "0.17.17-01f809",
-  "org.scalablytyped" %%% "pulumi__query" % "0.3.0-79fe31",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "pulumi__pulumi" % "0.17.17-59b5e9",
+  "org.scalablytyped" %%% "pulumi__query" % "0.3.0-92ee44",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

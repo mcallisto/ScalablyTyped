@@ -5,13 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@jupyterlab/notebook/lib/widgetfactory", "NotebookWidgetFactory")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped any */ @JSImport("@jupyterlab/notebook/lib/widgetfactory", "NotebookWidgetFactory")
 @js.native
-class NotebookWidgetFactory protected ()
-  extends atJupyterlabDocregistryLib.atJupyterlabDocregistryMod.ABCWidgetFactory[
-      atJupyterlabNotebookLib.libPanelMod.NotebookPanel, 
-      atJupyterlabNotebookLib.libModelMod.INotebookModel
-    ] {
+class NotebookWidgetFactory protected () extends js.Object {
   /**
     * Construct a new notebook widget factory.
     *
@@ -40,7 +37,13 @@ class NotebookWidgetFactory protected ()
     * the default toolbar items using `ToolbarItems.populateDefaults`.
     */
   /* protected */ def createNewWidget(
-    context: atJupyterlabDocregistryLib.libRegistryMod.DocumentRegistryNs.IContext[atJupyterlabNotebookLib.libModelMod.INotebookModel]
+    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IContext<INotebookModel> */ js.Any
   ): atJupyterlabNotebookLib.libPanelMod.NotebookPanel = js.native
+  /**
+    * Default factory for toolbar items to be added after the widget is created.
+    */
+  /* protected */ def defaultToolbarFactory(widget: atJupyterlabNotebookLib.libPanelMod.NotebookPanel): js.Array[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IToolbarItem */ _
+  ] = js.native
 }
 

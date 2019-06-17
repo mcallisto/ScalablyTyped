@@ -1,7 +1,7 @@
 
 # Scala.js typings for twilio-mcs-client
 
-Typings are for version 0.2.2
+Typings are for version 0.2.3
 
 ## Library description:
 Twilio Media Content Service client library

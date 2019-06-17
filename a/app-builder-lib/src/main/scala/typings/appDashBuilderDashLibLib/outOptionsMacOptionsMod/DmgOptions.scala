@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait DmgOptions extends js.Object {
+trait DmgOptions
+  extends appDashBuilderDashLibLib.outCoreMod.TargetSpecificOptions {
   /**
     * The path to background image (default: `build/background.tiff` or `build/background.png` if exists). The resolution of this file determines the resolution of the installer window.
     * If background is not specified, use `window.size`. Default locations expected background size to be 540x380.
@@ -69,6 +69,7 @@ import scala.scalajs.js.annotation._
 object DmgOptions {
   @scala.inline
   def apply(
+    artifactName: java.lang.String = null,
     background: java.lang.String = null,
     backgroundColor: java.lang.String = null,
     contents: js.Array[DmgContent] = null,
@@ -77,11 +78,13 @@ object DmgOptions {
     iconSize: scala.Int | scala.Double = null,
     iconTextSize: scala.Int | scala.Double = null,
     internetEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    publish: builderDashUtilDashRuntimeLib.outPublishOptionsMod.Publish = null,
     sign: js.UndefOr[scala.Boolean] = js.undefined,
     title: java.lang.String = null,
     window: DmgWindow = null
   ): DmgOptions = {
     val __obj = js.Dynamic.literal()
+    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName)
     if (background != null) __obj.updateDynamic("background")(background)
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (contents != null) __obj.updateDynamic("contents")(contents)
@@ -90,6 +93,7 @@ object DmgOptions {
     if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
     if (iconTextSize != null) __obj.updateDynamic("iconTextSize")(iconTextSize.asInstanceOf[js.Any])
     if (!js.isUndefined(internetEnabled)) __obj.updateDynamic("internetEnabled")(internetEnabled)
+    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
     if (!js.isUndefined(sign)) __obj.updateDynamic("sign")(sign)
     if (title != null) __obj.updateDynamic("title")(title)
     if (window != null) __obj.updateDynamic("window")(window)

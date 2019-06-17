@@ -10,9 +10,9 @@ A small, dependency-free, ES6 tweening library for smooth animations
 | ------------------ | :-------------: |
 | Full name          | tweezer.js |
 | Keywords           | tweezer, smooth scroll, tween, counter, easing |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 222722 |
+| # downloads        | 206459 |
 | # stars            | 1 |
 
 ## Links

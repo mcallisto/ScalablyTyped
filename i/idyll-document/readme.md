@@ -10,9 +10,9 @@ The Idyll runtime, implemented as a React component.
 | ------------------ | :-------------: |
 | Full name          | idyll-document |
 | Keywords           | - |
-| # releases         | 76 |
+| # releases         | 78 |
 | # dependents       | 2 |
-| # downloads        | 13792 |
+| # downloads        | 14428 |
 | # stars            | 0 |
 
 ## Links

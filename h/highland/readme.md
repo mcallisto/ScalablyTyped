@@ -10,9 +10,9 @@ The high-level streams library
 | ------------------ | :-------------: |
 | Full name          | highland |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 405 |
-| # downloads        | 2266957 |
+| # releases         | 14 |
+| # dependents       | 408 |
+| # downloads        | 2213210 |
 | # stars            | 31 |
 
 ## Links

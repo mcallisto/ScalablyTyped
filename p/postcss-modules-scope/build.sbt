@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "postcss-modules-scope"
-version := "1.1-dt-20181118Z-fb9e56"
-scalaVersion := "2.12.8"
+version := "1.1-dt-20181118Z-e7f8fe"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "postcss" % "6.0.23-2fbd4e",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-b05be9",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "postcss" % "6.0.23-61704e",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-62bc9f",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

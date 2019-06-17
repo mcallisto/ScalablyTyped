@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "nvd3"
-version := "1.8.1-dt-20190322Z-bb5717"
-scalaVersion := "2.12.8"
+version := "1.8.1-dt-20190322Z-03f4e3"
+scalaVersion := "2.13.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "d3-dispatch" % "1.0-dt-20190212Z-e4eb68",
-  "org.scalablytyped" %%% "d3-selection" % "1.4-dt-20190212Z-a5fa27",
-  "org.scalablytyped" %%% "d3-transition" % "1.1-dt-20190212Z-b9e7fd",
-  "org.scalablytyped" %%% "std" % "3.5-c5d119")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "d3-dispatch" % "1.0-dt-20190212Z-b84057",
+  "org.scalablytyped" %%% "d3-selection" % "1.4-dt-20190212Z-c7d4e0",
+  "org.scalablytyped" %%% "d3-transition" % "1.1-dt-20190212Z-6b0d7c",
+  "org.scalablytyped" %%% "std" % "3.5-d95bf7")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

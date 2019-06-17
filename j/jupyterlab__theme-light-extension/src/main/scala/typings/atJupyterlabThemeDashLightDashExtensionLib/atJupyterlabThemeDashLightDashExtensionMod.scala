@@ -11,6 +11,6 @@ object atJupyterlabThemeDashLightDashExtensionMod extends js.Object {
   /**
     * A plugin for the Jupyter Light Theme.
     */
-  val default: atJupyterlabApplicationLib.atJupyterlabApplicationMod.JupyterLabPlugin[scala.Unit] = js.native
+  val default: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JupyterLabPlugin<void> */ js.Any = js.native
 }
 

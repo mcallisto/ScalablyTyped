@@ -11,8 +11,8 @@ A light statistical package that operates on numeric Arrays.
 | Full name          | stats-lite |
 | Keywords           | stats, statistics, numbers, math, sum, mean, average, mode, median, percentile, variance, deviation |
 | # releases         | 4 |
-| # dependents       | 50 |
-| # downloads        | 1257165 |
+| # dependents       | 52 |
+| # downloads        | 1305922 |
 | # stars            | 5 |
 
 ## Links

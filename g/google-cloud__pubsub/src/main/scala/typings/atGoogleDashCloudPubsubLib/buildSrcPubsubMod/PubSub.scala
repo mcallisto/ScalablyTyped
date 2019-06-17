@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 class PubSub () extends js.Object {
   def this(options: ClientConfig) = this()
   var Promise: js.UndefOr[stdLib.PromiseConstructor] = js.native
-  var api: org.scalablytyped.runtime.StringDictionary[googleDashGaxLib.googleDashGaxMod.ClientStub] = js.native
+  var api: org.scalablytyped.runtime.StringDictionary[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify gax.ClientStub */ js.Any
+  ] = js.native
   var auth: googleDashAuthDashLibraryLib.googleDashAuthDashLibraryMod.GoogleAuth = js.native
   var isEmulator: scala.Boolean = js.native
   var options: ClientConfig = js.native
@@ -51,10 +53,13 @@ class PubSub () extends js.Object {
   ): scala.Unit = js.native
   def createTopic(name: java.lang.String): js.Promise[atGoogleDashCloudPubsubLib.buildSrcTopicMod.CreateTopicResponse] = js.native
   def createTopic(name: java.lang.String, callback: atGoogleDashCloudPubsubLib.buildSrcTopicMod.CreateTopicCallback): scala.Unit = js.native
-  def createTopic(name: java.lang.String, gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions): js.Promise[atGoogleDashCloudPubsubLib.buildSrcTopicMod.CreateTopicResponse] = js.native
   def createTopic(
     name: java.lang.String,
-    gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions,
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any
+  ): js.Promise[atGoogleDashCloudPubsubLib.buildSrcTopicMod.CreateTopicResponse] = js.native
+  def createTopic(
+    name: java.lang.String,
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any,
     callback: atGoogleDashCloudPubsubLib.buildSrcTopicMod.CreateTopicCallback
   ): scala.Unit = js.native
   /**

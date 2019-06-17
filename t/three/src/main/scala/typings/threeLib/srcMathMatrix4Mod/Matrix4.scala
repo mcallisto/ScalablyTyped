@@ -209,10 +209,15 @@ class Matrix4 ()
     n43: scala.Double,
     n44: scala.Double
   ): Matrix4 = js.native
+  def setPosition(v: scala.Double): Matrix4 = js.native
+  def setPosition(v: scala.Double, y: scala.Double): Matrix4 = js.native
+  def setPosition(v: scala.Double, y: scala.Double, z: scala.Double): Matrix4 = js.native
   /**
     * Sets the position component for this matrix from vector v.
     */
   def setPosition(v: threeLib.srcMathVector3Mod.Vector3): Matrix4 = js.native
+  def setPosition(v: threeLib.srcMathVector3Mod.Vector3, y: scala.Double): Matrix4 = js.native
+  def setPosition(v: threeLib.srcMathVector3Mod.Vector3, y: scala.Double, z: scala.Double): Matrix4 = js.native
   /**
     * @deprecated Use {@link Matrix4#makeRotationFromQuaternion .makeRotationFromQuaternion()} instead.
     */

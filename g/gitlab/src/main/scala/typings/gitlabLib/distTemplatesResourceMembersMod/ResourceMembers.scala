@@ -8,30 +8,67 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ResourceMembers
   extends gitlabLib.distInfrastructureMod.BaseService {
-  def add(resourceId: gitlabLib.ResourceId, userId: gitlabLib.UserId, accessLevel: gitlabLib.AccessLevel): js.Promise[js.Object] = js.native
   def add(
-    resourceId: gitlabLib.ResourceId,
-    userId: gitlabLib.UserId,
-    accessLevel: gitlabLib.AccessLevel,
-    options: gitlabLib.BaseRequestOptions
+    resourceId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResourceId */ js.Any,
+    userId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify UserId */ js.Any,
+    accessLevel: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AccessLevel */ js.Any
   ): js.Promise[js.Object] = js.native
-  def all(resourceId: gitlabLib.ResourceId): js.Promise[gitlabLib.GetResponse] = js.native
-  def all(resourceId: gitlabLib.ResourceId, includeInherited: scala.Boolean): js.Promise[gitlabLib.GetResponse] = js.native
+  def add(
+    resourceId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResourceId */ js.Any,
+    userId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify UserId */ js.Any,
+    accessLevel: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AccessLevel */ js.Any,
+    options: gitlabLib.distInfrastructureMod.BaseRequestOptions
+  ): js.Promise[js.Object] = js.native
   def all(
-    resourceId: gitlabLib.ResourceId,
+    resourceId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResourceId */ js.Any
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def all(
+    resourceId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResourceId */ js.Any,
+    includeInherited: scala.Boolean
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def all(
+    resourceId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResourceId */ js.Any,
     includeInherited: scala.Boolean,
-    options: gitlabLib.PaginatedRequestOptions
-  ): js.Promise[gitlabLib.GetResponse] = js.native
-  def edit(resourceId: gitlabLib.ResourceId, userId: gitlabLib.UserId, accessLevel: gitlabLib.AccessLevel): js.Promise[js.Object] = js.native
+    options: gitlabLib.distInfrastructureMod.PaginatedRequestOptions
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
   def edit(
-    resourceId: gitlabLib.ResourceId,
-    userId: gitlabLib.UserId,
-    accessLevel: gitlabLib.AccessLevel,
-    options: gitlabLib.BaseRequestOptions
+    resourceId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResourceId */ js.Any,
+    userId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify UserId */ js.Any,
+    accessLevel: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AccessLevel */ js.Any
   ): js.Promise[js.Object] = js.native
-  def remove(resourceId: gitlabLib.ResourceId, userId: gitlabLib.UserId): js.Promise[js.Object] = js.native
-  def remove(resourceId: gitlabLib.ResourceId, userId: gitlabLib.UserId, options: gitlabLib.Sudo): js.Promise[js.Object] = js.native
-  def show(resourceId: gitlabLib.ResourceId, userId: gitlabLib.UserId): js.Promise[gitlabLib.GetResponse] = js.native
-  def show(resourceId: gitlabLib.ResourceId, userId: gitlabLib.UserId, options: gitlabLib.Sudo): js.Promise[gitlabLib.GetResponse] = js.native
+  def edit(
+    resourceId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResourceId */ js.Any,
+    userId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify UserId */ js.Any,
+    accessLevel: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AccessLevel */ js.Any,
+    options: gitlabLib.distInfrastructureMod.BaseRequestOptions
+  ): js.Promise[js.Object] = js.native
+  def remove(
+    resourceId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResourceId */ js.Any,
+    userId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify UserId */ js.Any
+  ): js.Promise[js.Object] = js.native
+  def remove(
+    resourceId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResourceId */ js.Any,
+    userId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify UserId */ js.Any,
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[js.Object] = js.native
+  def show(
+    resourceId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResourceId */ js.Any,
+    userId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify UserId */ js.Any
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
+  def show(
+    resourceId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResourceId */ js.Any,
+    userId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify UserId */ js.Any,
+    options: gitlabLib.distInfrastructureMod.Sudo
+  ): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_gitlab/dist/infrastructure.GetResponse */ _
+  ] = js.native
 }
 

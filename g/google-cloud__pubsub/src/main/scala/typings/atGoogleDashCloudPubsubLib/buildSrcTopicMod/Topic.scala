@@ -18,11 +18,16 @@ class Topic protected () extends js.Object {
   var publisher: atGoogleDashCloudPubsubLib.buildSrcPublisherMod.Publisher = js.native
   var pubsub: atGoogleDashCloudPubsubLib.buildSrcPubsubMod.PubSub = js.native
   @JSName("request")
-  var request_Original: atGoogleDashCloudPubsubLib.Anon_Callback = js.native
+  var request_Original: atGoogleDashCloudPubsubLib.Fn_Callback = js.native
   def create(): js.Promise[CreateTopicResponse] = js.native
   def create(callback: CreateTopicCallback): scala.Unit = js.native
-  def create(gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions): js.Promise[CreateTopicResponse] = js.native
-  def create(gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions, callback: CreateTopicCallback): scala.Unit = js.native
+  def create(
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any
+  ): js.Promise[CreateTopicResponse] = js.native
+  def create(
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any,
+    callback: CreateTopicCallback
+  ): scala.Unit = js.native
   def createSubscription(name: java.lang.String): js.Promise[atGoogleDashCloudPubsubLib.buildSrcSubscriptionMod.CreateSubscriptionResponse] = js.native
   def createSubscription(
     name: java.lang.String,
@@ -39,9 +44,11 @@ class Topic protected () extends js.Object {
   ): scala.Unit = js.native
   def delete(): js.Promise[atGoogleDashCloudPubsubLib.buildSrcPubsubMod.EmptyResponse] = js.native
   def delete(callback: atGoogleDashCloudPubsubLib.buildSrcPubsubMod.EmptyCallback): scala.Unit = js.native
-  def delete(gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions): js.Promise[atGoogleDashCloudPubsubLib.buildSrcPubsubMod.EmptyResponse] = js.native
   def delete(
-    gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions,
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any
+  ): js.Promise[atGoogleDashCloudPubsubLib.buildSrcPubsubMod.EmptyResponse] = js.native
+  def delete(
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any,
     callback: atGoogleDashCloudPubsubLib.buildSrcPubsubMod.EmptyCallback
   ): scala.Unit = js.native
   def exists(): js.Promise[atGoogleDashCloudPubsubLib.buildSrcPubsubMod.ExistsResponse] = js.native
@@ -52,8 +59,13 @@ class Topic protected () extends js.Object {
   def get(gaxOpts: GetTopicOptions, callback: GetTopicCallback): scala.Unit = js.native
   def getMetadata(): js.Promise[GetTopicMetadataResponse] = js.native
   def getMetadata(callback: GetTopicMetadataCallback): scala.Unit = js.native
-  def getMetadata(gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions): js.Promise[GetTopicMetadataResponse] = js.native
-  def getMetadata(gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions, callback: GetTopicMetadataCallback): scala.Unit = js.native
+  def getMetadata(
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any
+  ): js.Promise[GetTopicMetadataResponse] = js.native
+  def getMetadata(
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any,
+    callback: GetTopicMetadataCallback
+  ): scala.Unit = js.native
   def getSubscriptions(): js.Promise[GetTopicSubscriptionsResponse] = js.native
   def getSubscriptions(callback: GetTopicSubscriptionsCallback): scala.Unit = js.native
   def getSubscriptions(options: atGoogleDashCloudPubsubLib.buildSrcPubsubMod.PageOptions): js.Promise[GetTopicSubscriptionsResponse] = js.native
@@ -84,10 +96,13 @@ class Topic protected () extends js.Object {
   ): scala.Unit = js.native
   def setMetadata(options: TopicMetadata): js.Promise[SetTopicMetadataResponse] = js.native
   def setMetadata(options: TopicMetadata, callback: SetTopicMetadataCallback): scala.Unit = js.native
-  def setMetadata(options: TopicMetadata, gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions): js.Promise[SetTopicMetadataResponse] = js.native
   def setMetadata(
     options: TopicMetadata,
-    gaxOpts: googleDashGaxLib.buildSrcGaxMod.CallOptions,
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any
+  ): js.Promise[SetTopicMetadataResponse] = js.native
+  def setMetadata(
+    options: TopicMetadata,
+    gaxOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CallOptions */ js.Any,
     callback: SetTopicMetadataCallback
   ): scala.Unit = js.native
   /**

@@ -11,8 +11,8 @@ Universal, high-performance JavaScript styles
 | Full name          | styletron-engine-atomic |
 | Keywords           | - |
 | # releases         | 31 |
-| # dependents       | 11 |
-| # downloads        | 814889 |
+| # dependents       | 12 |
+| # downloads        | 854502 |
 | # stars            | 0 |
 
 ## Links

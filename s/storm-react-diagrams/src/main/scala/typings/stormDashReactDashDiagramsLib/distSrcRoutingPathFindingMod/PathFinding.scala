@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PathFinding extends js.Object {
-  var diagramEngine: stormDashReactDashDiagramsLib.distSrcMainMod.DiagramEngine
+  var diagramEngine: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DiagramEngine */ js.Any
   var instance: js.Any
   /**
     * Taking as argument a fully unblocked walking matrix, this method
@@ -38,7 +38,7 @@ object PathFinding {
     calculateDirectPath: (stormDashReactDashDiagramsLib.Anon_X, stormDashReactDashDiagramsLib.Anon_X) => js.Array[js.Array[scala.Double]],
     calculateDynamicPath: (js.Array[js.Array[scala.Double]], stormDashReactDashDiagramsLib.Anon_X, stormDashReactDashDiagramsLib.Anon_X, js.Array[js.Array[scala.Double]], js.Array[js.Array[scala.Double]]) => js.Any,
     calculateLinkStartEndCoords: (js.Array[js.Array[scala.Double]], js.Array[js.Array[scala.Double]]) => stormDashReactDashDiagramsLib.Anon_End,
-    diagramEngine: stormDashReactDashDiagramsLib.distSrcMainMod.DiagramEngine,
+    diagramEngine: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DiagramEngine */ js.Any,
     instance: js.Any
   ): PathFinding = {
     val __obj = js.Dynamic.literal(calculateDirectPath = js.Any.fromFunction2(calculateDirectPath), calculateDynamicPath = js.Any.fromFunction5(calculateDynamicPath), calculateLinkStartEndCoords = js.Any.fromFunction2(calculateLinkStartEndCoords), diagramEngine = diagramEngine, instance = instance)
